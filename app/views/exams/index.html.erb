@@ -1,0 +1,8 @@
+<div class="content">
+  <h1>Exams#index</h1>
+
+  <% @exams.each do |e| %>
+    <%= link_to e.id, exam_path(e) %>
+  <% end %>
+
+</div>

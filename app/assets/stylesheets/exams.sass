@@ -1,0 +1,43 @@
+// Place all the styles related to the exams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.exam
+  text-align: center
+  border-collapse: collapse
+  margin: 0 auto 0 auto
+
+.exam table, .exam th, .exam td
+  border: 1px solid grey
+
+.exam tr
+  font-size: 0.8em
+
+.tasca, .recessione, .PA, .sang, .placca, .pus
+  padding: 0
+  margin: 0
+  .exam td
+    margin: 0
+    padding: 0
+
+.exam td
+  padding: 0.3em
+
+.exam input
+  font-size: 0.9em
+  font-family: "Avenir"
+  padding: 0
+  margin: 0
+  &[type="number"]
+    width: 18px
+    text-align: center
+  &[type="checkbox"]:checked
+    background: red
+    color: red
+    border: red
+
+.indice, .index
+  width: 150px
+
+.e18, .e16, .e14, .e12, .e21, .e23, .e25, .e27
+  background-color: rgb(230, 230, 230)

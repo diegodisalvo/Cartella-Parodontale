@@ -1,0 +1,3506 @@
+<h1 class="text-center">Esame di <%= @exam.patient.name + ' ' + @exam.patient.last_name %></h1>
+<h5 class="text-center">Del giorno: <%= @exam.created_at %></h5>
+<p class="text-center"><strong>Annotazioni:</strong> <%= @exam.notes %></p>
+<hr />
+<h2 class="text-center">Arcata Superiore</h2>
+<table class="exam">
+  <thead>
+    <tr class="indice">
+        <td colspan="1" rowspan="3" class="indice">indice</td>
+        <td colspan="3" class="e18" data-site=".e18">18</td>
+        <td colspan="3" class="e17" data-site=".e17">17</td>
+        <td colspan="3" class="e16" data-site=".e16">16</td>
+        <td colspan="3" class="e15" data-site=".e15">15</td>
+        <td colspan="3" class="e14" data-site=".e14">14</td>
+        <td colspan="3" class="e13" data-site=".e13">13</td>
+        <td colspan="3" class="e12"data-site=".e12">12</td>
+        <td colspan="3" class="e11" data-site=".e11">11</td>
+        <td colspan="3" class="e21" data-site=".e21">21</td>
+        <td colspan="3" class="e22" data-site=".e22">22</td>
+        <td colspan="3" class="e23"  data-site=".e23">23</td>
+        <td colspan="3" class="e24"  data-site=".e24">24</td>
+        <td colspan="3" class="e25"  data-site=".e25">25</td>
+        <td colspan="3" class="e26"  data-site=".e26">26</td>
+        <td colspan="3" class="e27"  data-site=".e27">27</td>
+        <td colspan="3" class="e28"  data-site=".e28">28</td>
+    </tr>
+    <tr>
+        <td class="e18">D</td>
+        <td class="e18">V</td>
+        <td class="e18">M</td>
+
+        <td class="e17">D</td>
+        <td class="e17">V</td>
+        <td class="e17">M</td>
+
+        <td class="e16">D</td>
+        <td class="e16">V</td>
+        <td class="e16">M</td>
+
+        <td class="e15">D</td>
+        <td class="e15">V</td>
+        <td class="e15">M</td>
+
+        <td class="e14">D</td>
+        <td class="e14">V</td>
+        <td class="e14">M</td>
+
+        <td class="e13">D</td>
+        <td class="e13">V</td>
+        <td class="e13">M</td>
+
+        <td class="e12">D</td>
+        <td class="e12">V</td>
+        <td class="e12">M</td>
+
+        <td class="e11">D</td>
+        <td class="e11">V</td>
+        <td class="e11">M</td>
+
+        <td class="e21">M</td>
+        <td class="e21">V</td>
+        <td class="e21">D</td>
+
+        <td class="e22">M</td>
+        <td class="e22">V</td>
+        <td class="e22">D</td>
+
+        <td class="e23">M</td>
+        <td class="e23">V</td>
+        <td class="e23">D</td>
+
+        <td class="e24">M</td>
+        <td class="e24">V</td>
+        <td class="e24">D</td>
+
+        <td class="e25">M</td>
+        <td class="e25">V</td>
+        <td class="e25">D</td>
+
+        <td class="e26">M</td>
+        <td class="e26">V</td>
+        <td class="e26">D</td>
+
+        <td class="e27">M</td>
+        <td class="e27">V</td>
+        <td class="e27">D</td>
+
+        <td class="e28">M</td>
+        <td class="e28">V</td>
+        <td class="e28">D</td>
+    </tr>
+</thead>
+<tbody>
+    <tr class="assenza">
+        <td class="index">elemento assente</td>
+        <td colspan="3" class="e18"><input type="checkbox" class="assenza" data-element=".e18"<% if @exam.e18[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e17"><input type="checkbox" class="assenza" data-element=".e17"<% if @exam.e17[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e16"><input type="checkbox" class="assenza" data-element=".e16"<% if @exam.e16[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e15"><input type="checkbox" class="assenza" data-element=".e15"<% if @exam.e15[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e14"><input type="checkbox" class="assenza" data-element=".e14"<% if @exam.e14[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e13"><input type="checkbox" class="assenza" data-element=".e13"<% if @exam.e13[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e12"><input type="checkbox" class="assenza" data-element=".e12"<% if @exam.e12[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e11"><input type="checkbox" class="assenza" data-element=".e11"<% if @exam.e11[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e21"><input type="checkbox" class="assenza" data-element=".e21"<% if @exam.e21[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e22"><input type="checkbox" class="assenza" data-element=".e22"<% if @exam.e22[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e23"><input type="checkbox" class="assenza" data-element=".e23"<% if @exam.e23[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e24"><input type="checkbox" class="assenza" data-element=".e24"<% if @exam.e24[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e25"><input type="checkbox" class="assenza" data-element=".e25"<% if @exam.e25[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e26"><input type="checkbox" class="assenza" data-element=".e26"<% if @exam.e26[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e27"><input type="checkbox" class="assenza" data-element=".e27"<% if @exam.e27[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e28"><input type="checkbox" class="assenza" data-element=".e28"<% if @exam.e28[0] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="impianto">
+        <td class="index">impianto</td>
+        <td colspan="3" class="e18"><input type="checkbox" class="impianto" data-element=".e18"<% if @exam.e18[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e17"><input type="checkbox" class="impianto" data-element=".e17"<% if @exam.e17[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e16"><input type="checkbox" class="impianto" data-element=".e16"<% if @exam.e16[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e15"><input type="checkbox" class="impianto" data-element=".e15"<% if @exam.e15[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e14"><input type="checkbox" class="impianto" data-element=".e14"<% if @exam.e14[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e13"><input type="checkbox" class="impianto" data-element=".e13"<% if @exam.e13[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e12"><input type="checkbox" class="impianto" data-element=".e12"<% if @exam.e12[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e11"><input type="checkbox" class="impianto" data-element=".e11"<% if @exam.e11[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e21"><input type="checkbox" class="impianto" data-element=".e21"<% if @exam.e21[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e22"><input type="checkbox" class="impianto" data-element=".e22"<% if @exam.e22[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e23"><input type="checkbox" class="impianto" data-element=".e23"<% if @exam.e23[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e24"><input type="checkbox" class="impianto" data-element=".e24"<% if @exam.e24[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e25"><input type="checkbox" class="impianto" data-element=".e25"<% if @exam.e25[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e26"><input type="checkbox" class="impianto" data-element=".e26"<% if @exam.e26[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e27"><input type="checkbox" class="impianto" data-element=".e27"<% if @exam.e27[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e28"><input type="checkbox" class="impianto" data-element=".e28"<% if @exam.e28[1] == 1 %> checked <% end %>></td>
+    </tr>
+    <tr class="tasca V">
+        <td class="index">tasca V</td>
+        <td class="e18 d"><%= @exam.e18[2]%></td>
+        <td class="e18 v"><%= @exam.e18[3]%></td>
+        <td class="e18 m"><%= @exam.e18[4]%></td>
+        <td class="e17 d"><%= @exam.e17[2]%></td>
+        <td class="e17 v"><%= @exam.e17[3]%></td>
+        <td class="e17 m"><%= @exam.e17[4]%></td>
+        <td class="e16 d"><%= @exam.e16[2]%></td>
+        <td class="e16 v"><%= @exam.e16[3]%></td>
+        <td class="e16 m"><%= @exam.e16[4]%></td>
+        <td class="e15 d"><%= @exam.e15[2]%></td>
+        <td class="e15 v"><%= @exam.e15[3]%></td>
+        <td class="e15 m"><%= @exam.e15[4]%></td>
+        <td class="e14 d"><%= @exam.e14[2]%></td>
+        <td class="e14 v"><%= @exam.e14[3]%></td>
+        <td class="e14 m"><%= @exam.e14[4]%></td>
+        <td class="e13 d"><%= @exam.e13[2]%></td>
+        <td class="e13 v"><%= @exam.e13[3]%></td>
+        <td class="e13 m"><%= @exam.e13[4]%></td>
+        <td class="e12 d"><%= @exam.e12[2]%></td>
+        <td class="e12 v"><%= @exam.e12[3]%></td>
+        <td class="e12 m"><%= @exam.e12[4]%></td>
+        <td class="e11 d"><%= @exam.e11[2]%></td>
+        <td class="e11 v"><%= @exam.e11[3]%></td>
+        <td class="e11 m"><%= @exam.e11[4]%></td>
+        <td class="e21 m"><%= @exam.e21[4]%></td>
+        <td class="e21 v"><%= @exam.e21[3]%></td>
+        <td class="e21 d"><%= @exam.e21[2]%></td>
+        <td class="e22 m"><%= @exam.e22[4]%></td>
+        <td class="e22 v"><%= @exam.e22[3]%></td>
+        <td class="e22 d"><%= @exam.e22[2]%></td>
+        <td class="e23 m"><%= @exam.e23[4]%></td>
+        <td class="e23 v"><%= @exam.e23[3]%></td>
+        <td class="e23 d"><%= @exam.e23[2]%></td>
+        <td class="e24 m"><%= @exam.e24[4]%></td>
+        <td class="e24 v"><%= @exam.e24[3]%></td>
+        <td class="e24 d"><%= @exam.e24[2]%></td>
+        <td class="e25 m"><%= @exam.e25[4]%></td>
+        <td class="e25 v"><%= @exam.e25[3]%></td>
+        <td class="e25 d"><%= @exam.e25[2]%></td>
+        <td class="e26 m"><%= @exam.e26[4]%></td>
+        <td class="e26 v"><%= @exam.e26[3]%></td>
+        <td class="e26 d"><%= @exam.e26[2]%></td>
+        <td class="e27 m"><%= @exam.e27[4]%></td>
+        <td class="e27 v"><%= @exam.e27[3]%></td>
+        <td class="e27 d"><%= @exam.e27[2]%></td>
+        <td class="e28 m"><%= @exam.e28[4]%></td>
+        <td class="e28 v"><%= @exam.e28[3]%></td>
+        <td class="e28 d"><%= @exam.e28[2]%></td>
+    </tr>
+
+    <tr class="Sang V">
+        <td class="index">Sanguinamento V</td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[24] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[25] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[26] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[24] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[25] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[26] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[24] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[25] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[26] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[23] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[24] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[25] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[23] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[24] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[25] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[21] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[22] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[23] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[21] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[22] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[23] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[21] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[22] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[23] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[23] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[22] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[21] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[23] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[22] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[21] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[23] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[22] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[21] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[24] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[22] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[22] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[24] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[23] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[22] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[26] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[25] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[24] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[26] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[25] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[24] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[26] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[25] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[24] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="Placca V">
+        <td class="index">Placca V</td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[30] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[31] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[32] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[30] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[31] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[32] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[30] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[31] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[32] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[29] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[30] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[31] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[29] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[30] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[31] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[27] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[28] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[29] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[27] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[28] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[29] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[27] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[28] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[29] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[29] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[28] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[27] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[29] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[28] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[27] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[29] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[28] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[27] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[30] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[29] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[28] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[30] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[29] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[28] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[32] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[31] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[30] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[32] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[31] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[30] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[32] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[31] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[30] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="Pus V">
+        <td class="index">Pus V</td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[36] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[37] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[38] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[36] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[37] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[38] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[36] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[37] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[38] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[35] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[36] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[37] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[34] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[35] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[36] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[33] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[34] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[35] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[33] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[34] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[35] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[33] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[34] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[35] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[35] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[34] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[33] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[35] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[34] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[33] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[35] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[34] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[33] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[36] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[35] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[34] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[36] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[35] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[34] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[38] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[37] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[36] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[38] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[37] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[36] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[38] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[37] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[36] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="tasca P">
+        <td class="index">tasca P</td>
+        <td class="e18 d"><%= @exam.e18[5]%></td>
+        <td class="e18 v"><%= @exam.e18[6]%></td>
+        <td class="e18 m"><%= @exam.e18[7]%></td>
+        <td class="e17 d"><%= @exam.e17[5]%></td>
+        <td class="e17 v"><%= @exam.e17[6]%></td>
+        <td class="e17 m"><%= @exam.e17[7]%></td>
+        <td class="e16 d"><%= @exam.e16[5]%></td>
+        <td class="e16 v"><%= @exam.e16[6]%></td>
+        <td class="e16 m"><%= @exam.e16[7]%></td>
+        <td class="e15 d"><%= @exam.e15[5]%></td>
+        <td class="e15 v"><%= @exam.e15[6]%></td>
+        <td class="e15 m"><%= @exam.e15[7]%></td>
+        <td class="e14 d"><%= @exam.e14[5]%></td>
+        <td class="e14 v"><%= @exam.e14[6]%></td>
+        <td class="e14 m"><%= @exam.e14[7]%></td>
+        <td class="e13 d"><%= @exam.e13[5]%></td>
+        <td class="e13 v"><%= @exam.e13[6]%></td>
+        <td class="e13 m"><%= @exam.e13[7]%></td>
+        <td class="e12 d"><%= @exam.e12[5]%></td>
+        <td class="e12 v"><%= @exam.e12[6]%></td>
+        <td class="e12 m"><%= @exam.e12[7]%></td>
+        <td class="e11 d"><%= @exam.e11[5]%></td>
+        <td class="e11 v"><%= @exam.e11[6]%></td>
+        <td class="e11 m"><%= @exam.e11[7]%></td>
+        <td class="e21 m"><%= @exam.e21[7]%></td>
+        <td class="e21 v"><%= @exam.e21[6]%></td>
+        <td class="e21 d"><%= @exam.e21[5]%></td>
+        <td class="e22 m"><%= @exam.e22[7]%></td>
+        <td class="e22 v"><%= @exam.e22[6]%></td>
+        <td class="e22 d"><%= @exam.e22[5]%></td>
+        <td class="e23 m"><%= @exam.e23[7]%></td>
+        <td class="e23 v"><%= @exam.e23[6]%></td>
+        <td class="e23 d"><%= @exam.e23[5]%></td>
+        <td class="e24 m"><%= @exam.e24[7]%></td>
+        <td class="e24 v"><%= @exam.e24[6]%></td>
+        <td class="e24 d"><%= @exam.e24[5]%></td>
+        <td class="e25 m"><%= @exam.e25[7]%></td>
+        <td class="e25 v"><%= @exam.e25[6]%></td>
+        <td class="e25 d"><%= @exam.e25[5]%></td>
+        <td class="e26 m"><%= @exam.e26[7]%></td>
+        <td class="e26 v"><%= @exam.e26[6]%></td>
+        <td class="e26 d"><%= @exam.e26[5]%></td>
+        <td class="e27 m"><%= @exam.e27[7]%></td>
+        <td class="e27 v"><%= @exam.e27[6]%></td>
+        <td class="e27 d"><%= @exam.e27[5]%></td>
+        <td class="e28 m"><%= @exam.e28[7]%></td>
+        <td class="e28 v"><%= @exam.e28[6]%></td>
+        <td class="e28 d"><%= @exam.e28[5]%></td>
+    </tr>
+
+    <tr class="Sang P">
+        <td class="index">Sanguinamento P</td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[27] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[28] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[29] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[27] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[28] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[29] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[27] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[28] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[29] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[26] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[27] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[28] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[26] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[27] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[28] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[24] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[25] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[26] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[24] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[25] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[26] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[24] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[25] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[26] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[26] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[25] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[24] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[26] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[25] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[24] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[26] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[25] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[24] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[27] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[26] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[25] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[27] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[26] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[25] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[29] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[28] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[27] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[29] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[28] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[27] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[29] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[28] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[27] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="Placca P">
+        <td class="index">Placca P</td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[33] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[34] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[35] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[33] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[34] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[35] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[33] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[34] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[35] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[32] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[33] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[34] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[32] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[33] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[34] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[30] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[31] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[32] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[30] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[31] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[32] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[30] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[31] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[32] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[32] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[31] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[30] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[32] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[31] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[30] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[32] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[31] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[30] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[33] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[32] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[31] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[33] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[32] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[31] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[35] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[34] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[33] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[35] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[34] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[33] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[35] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[34] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[33] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="Pus P">
+        <td class="index">Pus P</td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[39] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[40] == 1 %> checked <% end %>></td>
+        <td class="e18"><input type="checkbox"<% if @exam.e18[41] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[39] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[40] == 1 %> checked <% end %>></td>
+        <td class="e17"><input type="checkbox"<% if @exam.e17[41] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[39] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[40] == 1 %> checked <% end %>></td>
+        <td class="e16"><input type="checkbox"<% if @exam.e16[41] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[38] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[39] == 1 %> checked <% end %>></td>
+        <td class="e15"><input type="checkbox"<% if @exam.e15[40] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[37] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[38] == 1 %> checked <% end %>></td>
+        <td class="e14"><input type="checkbox"<% if @exam.e14[39] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[36] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[37] == 1 %> checked <% end %>></td>
+        <td class="e13"><input type="checkbox"<% if @exam.e13[38] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[36] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[37] == 1 %> checked <% end %>></td>
+        <td class="e12"><input type="checkbox"<% if @exam.e12[38] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[36] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[37] == 1 %> checked <% end %>></td>
+        <td class="e11"><input type="checkbox"<% if @exam.e11[38] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[38] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[37] == 1 %> checked <% end %>></td>
+        <td class="e21"><input type="checkbox"<% if @exam.e21[36] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[38] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[37] == 1 %> checked <% end %>></td>
+        <td class="e22"><input type="checkbox"<% if @exam.e22[36] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[38] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[37] == 1 %> checked <% end %>></td>
+        <td class="e23"><input type="checkbox"<% if @exam.e23[36] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[39] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[38] == 1 %> checked <% end %>></td>
+        <td class="e24"><input type="checkbox"<% if @exam.e24[37] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[39] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[38] == 1 %> checked <% end %>></td>
+        <td class="e25"><input type="checkbox"<% if @exam.e25[37] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[41] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[40] == 1 %> checked <% end %>></td>
+        <td class="e26"><input type="checkbox"<% if @exam.e26[39] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[41] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[40] == 1 %> checked <% end %>></td>
+        <td class="e27"><input type="checkbox"<% if @exam.e27[39] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[42] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[40] == 1 %> checked <% end %>></td>
+        <td class="e28"><input type="checkbox"<% if @exam.e28[39] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="recessione V">
+        <td class="index">recessione V</td>
+        <td class="e18 d"><%= @exam.e18[8]%></td>
+        <td class="e18 v"><%= @exam.e18[9]%></td>
+        <td class="e18 m"><%= @exam.e18[10]%></td>
+        <td class="e17 d"><%= @exam.e17[8]%></td>
+        <td class="e17 v"><%= @exam.e17[9]%></td>
+        <td class="e17 m"><%= @exam.e17[10]%></td>
+        <td class="e16 d"><%= @exam.e16[8]%></td>
+        <td class="e16 v"><%= @exam.e16[9]%></td>
+        <td class="e16 m"><%= @exam.e16[10]%></td>
+        <td class="e15 d"><%= @exam.e15[8]%></td>
+        <td class="e15 v"><%= @exam.e15[9]%></td>
+        <td class="e15 m"><%= @exam.e15[10]%></td>
+        <td class="e14 d"><%= @exam.e14[8]%></td>
+        <td class="e14 v"><%= @exam.e14[9]%></td>
+        <td class="e14 m"><%= @exam.e14[10]%></td>
+        <td class="e13 d"><%= @exam.e13[8]%></td>
+        <td class="e13 v"><%= @exam.e13[9]%></td>
+        <td class="e13 m"><%= @exam.e13[10]%></td>
+        <td class="e12 d"><%= @exam.e12[8]%></td>
+        <td class="e12 v"><%= @exam.e12[9]%></td>
+        <td class="e12 m"><%= @exam.e12[10]%></td>
+        <td class="e11 d"><%= @exam.e11[8]%></td>
+        <td class="e11 v"><%= @exam.e11[9]%></td>
+        <td class="e11 m"><%= @exam.e11[10]%></td>
+        <td class="e21 m"><%= @exam.e21[10]%></td>
+        <td class="e21 v"><%= @exam.e21[9]%></td>
+        <td class="e21 d"><%= @exam.e21[8]%></td>
+        <td class="e22 m"><%= @exam.e22[10]%></td>
+        <td class="e22 v"><%= @exam.e22[9]%></td>
+        <td class="e22 d"><%= @exam.e22[8]%></td>
+        <td class="e23 m"><%= @exam.e23[10]%></td>
+        <td class="e23 v"><%= @exam.e23[9]%></td>
+        <td class="e23 d"><%= @exam.e23[8]%></td>
+        <td class="e24 m"><%= @exam.e24[10]%></td>
+        <td class="e24 v"><%= @exam.e24[9]%></td>
+        <td class="e24 d"><%= @exam.e24[8]%></td>
+        <td class="e25 m"><%= @exam.e25[10]%></td>
+        <td class="e25 v"><%= @exam.e25[9]%></td>
+        <td class="e25 d"><%= @exam.e25[8]%></td>
+        <td class="e26 m"><%= @exam.e26[10]%></td>
+        <td class="e26 v"><%= @exam.e26[9]%></td>
+        <td class="e26 d"><%= @exam.e26[8]%></td>
+        <td class="e27 m"><%= @exam.e27[10]%></td>
+        <td class="e27 v"><%= @exam.e27[9]%></td>
+        <td class="e27 d"><%= @exam.e27[8]%></td>
+        <td class="e28 m"><%= @exam.e28[10]%></td>
+        <td class="e28 v"><%= @exam.e28[9]%></td>
+        <td class="e28 d"><%= @exam.e28[8]%></td>
+    </tr>
+
+    <tr class="recessione P">
+        <td class="index">recessione P</td>
+        <td class="e18 d"><%= @exam.e18[11]%></td>
+        <td class="e18 v"><%= @exam.e18[12]%></td>
+        <td class="e18 m"><%= @exam.e18[13]%></td>
+        <td class="e17 d"><%= @exam.e17[11]%></td>
+        <td class="e17 v"><%= @exam.e17[12]%></td>
+        <td class="e17 m"><%= @exam.e17[13]%></td>
+        <td class="e16 d"><%= @exam.e16[11]%></td>
+        <td class="e16 v"><%= @exam.e16[12]%></td>
+        <td class="e16 m"><%= @exam.e16[13]%></td>
+        <td class="e15 d"><%= @exam.e15[11]%></td>
+        <td class="e15 v"><%= @exam.e15[12]%></td>
+        <td class="e15 m"><%= @exam.e15[13]%></td>
+        <td class="e14 d"><%= @exam.e14[11]%></td>
+        <td class="e14 v"><%= @exam.e14[12]%></td>
+        <td class="e14 m"><%= @exam.e14[13]%></td>
+        <td class="e13 d"><%= @exam.e13[11]%></td>
+        <td class="e13 v"><%= @exam.e13[12]%></td>
+        <td class="e13 m"><%= @exam.e13[13]%></td>
+        <td class="e12 d"><%= @exam.e12[11]%></td>
+        <td class="e12 v"><%= @exam.e12[12]%></td>
+        <td class="e12 m"><%= @exam.e12[13]%></td>
+        <td class="e11 d"><%= @exam.e11[11]%></td>
+        <td class="e11 v"><%= @exam.e11[12]%></td>
+        <td class="e11 m"><%= @exam.e11[13]%></td>
+        <td class="e21 m"><%= @exam.e21[13]%></td>
+        <td class="e21 v"><%= @exam.e21[12]%></td>
+        <td class="e21 d"><%= @exam.e21[11]%></td>
+        <td class="e22 m"><%= @exam.e22[13]%></td>
+        <td class="e22 v"><%= @exam.e22[12]%></td>
+        <td class="e22 d"><%= @exam.e22[11]%></td>
+        <td class="e23 m"><%= @exam.e23[13]%></td>
+        <td class="e23 v"><%= @exam.e23[12]%></td>
+        <td class="e23 d"><%= @exam.e23[11]%></td>
+        <td class="e24 m"><%= @exam.e24[13]%></td>
+        <td class="e24 v"><%= @exam.e24[12]%></td>
+        <td class="e24 d"><%= @exam.e24[11]%></td>
+        <td class="e25 m"><%= @exam.e25[13]%></td>
+        <td class="e25 v"><%= @exam.e25[12]%></td>
+        <td class="e25 d"><%= @exam.e25[11]%></td>
+        <td class="e26 m"><%= @exam.e26[13]%></td>
+        <td class="e26 v"><%= @exam.e26[12]%></td>
+        <td class="e26 d"><%= @exam.e26[11]%></td>
+        <td class="e27 m"><%= @exam.e27[13]%></td>
+        <td class="e27 v"><%= @exam.e27[12]%></td>
+        <td class="e27 d"><%= @exam.e27[11]%></td>
+        <td class="e28 m"><%= @exam.e28[13]%></td>
+        <td class="e28 v"><%= @exam.e28[12]%></td>
+        <td class="e28 d"><%= @exam.e28[11]%></td>
+    </tr>
+
+    <tr class="PA V">
+        <td class="index">Perdita d'attacco V</td>
+        <td class="e18 d"><%= @exam.e18[14]%></td>
+        <td class="e18 v"><%= @exam.e18[15]%></td>
+        <td class="e18 m"><%= @exam.e18[16]%></td>
+        <td class="e17 d"><%= @exam.e17[14]%></td>
+        <td class="e17 v"><%= @exam.e17[15]%></td>
+        <td class="e17 m"><%= @exam.e17[16]%></td>
+        <td class="e16 d"><%= @exam.e16[14]%></td>
+        <td class="e16 v"><%= @exam.e16[15]%></td>
+        <td class="e16 m"><%= @exam.e16[16]%></td>
+        <td class="e15 d"><%= @exam.e15[14]%></td>
+        <td class="e15 v"><%= @exam.e15[15]%></td>
+        <td class="e15 m"><%= @exam.e15[16]%></td>
+        <td class="e14 d"><%= @exam.e14[14]%></td>
+        <td class="e14 v"><%= @exam.e14[15]%></td>
+        <td class="e14 m"><%= @exam.e14[16]%></td>
+        <td class="e13 d"><%= @exam.e13[14]%></td>
+        <td class="e13 v"><%= @exam.e13[15]%></td>
+        <td class="e13 m"><%= @exam.e13[16]%></td>
+        <td class="e12 d"><%= @exam.e12[14]%></td>
+        <td class="e12 v"><%= @exam.e12[15]%></td>
+        <td class="e12 m"><%= @exam.e12[16]%></td>
+        <td class="e11 d"><%= @exam.e11[14]%></td>
+        <td class="e11 v"><%= @exam.e11[15]%></td>
+        <td class="e11 m"><%= @exam.e11[16]%></td>
+        <td class="e21 m"><%= @exam.e21[16]%></td>
+        <td class="e21 v"><%= @exam.e21[15]%></td>
+        <td class="e21 d"><%= @exam.e21[14]%></td>
+        <td class="e22 m"><%= @exam.e22[16]%></td>
+        <td class="e22 v"><%= @exam.e22[15]%></td>
+        <td class="e22 d"><%= @exam.e22[14]%></td>
+        <td class="e23 m"><%= @exam.e23[16]%></td>
+        <td class="e23 v"><%= @exam.e23[15]%></td>
+        <td class="e23 d"><%= @exam.e23[14]%></td>
+        <td class="e24 m"><%= @exam.e24[16]%></td>
+        <td class="e24 v"><%= @exam.e24[15]%></td>
+        <td class="e24 d"><%= @exam.e24[14]%></td>
+        <td class="e25 m"><%= @exam.e25[16]%></td>
+        <td class="e25 v"><%= @exam.e25[15]%></td>
+        <td class="e25 d"><%= @exam.e25[14]%></td>
+        <td class="e26 m"><%= @exam.e26[16]%></td>
+        <td class="e26 v"><%= @exam.e26[15]%></td>
+        <td class="e26 d"><%= @exam.e26[14]%></td>
+        <td class="e27 m"><%= @exam.e27[16]%></td>
+        <td class="e27 v"><%= @exam.e27[15]%></td>
+        <td class="e27 d"><%= @exam.e27[14]%></td>
+        <td class="e28 m"><%= @exam.e28[16]%></td>
+        <td class="e28 v"><%= @exam.e28[15]%></td>
+        <td class="e28 d"><%= @exam.e28[14]%></td>
+    </tr>
+
+    <tr class="PA P">
+        <td class="index">Perdita d'attacco P</td>
+        <td class="e18 d"><%= @exam.e18[17]%></td>
+        <td class="e18 v"><%= @exam.e18[18]%></td>
+        <td class="e18 m"><%= @exam.e18[19]%></td>
+        <td class="e17 d"><%= @exam.e17[17]%></td>
+        <td class="e17 v"><%= @exam.e17[18]%></td>
+        <td class="e17 m"><%= @exam.e17[19]%></td>
+        <td class="e16 d"><%= @exam.e16[17]%></td>
+        <td class="e16 v"><%= @exam.e16[18]%></td>
+        <td class="e16 m"><%= @exam.e16[19]%></td>
+        <td class="e15 d"><%= @exam.e15[17]%></td>
+        <td class="e15 v"><%= @exam.e15[18]%></td>
+        <td class="e15 m"><%= @exam.e15[19]%></td>
+        <td class="e14 d"><%= @exam.e14[17]%></td>
+        <td class="e14 v"><%= @exam.e14[18]%></td>
+        <td class="e14 m"><%= @exam.e14[19]%></td>
+        <td class="e13 d"><%= @exam.e13[17]%></td>
+        <td class="e13 v"><%= @exam.e13[18]%></td>
+        <td class="e13 m"><%= @exam.e13[19]%></td>
+        <td class="e12 d"><%= @exam.e12[17]%></td>
+        <td class="e12 v"><%= @exam.e12[18]%></td>
+        <td class="e12 m"><%= @exam.e12[19]%></td>
+        <td class="e11 d"><%= @exam.e11[17]%></td>
+        <td class="e11 v"><%= @exam.e11[18]%></td>
+        <td class="e11 m"><%= @exam.e11[19]%></td>
+        <td class="e21 m"><%= @exam.e21[19]%></td>
+        <td class="e21 v"><%= @exam.e21[18]%></td>
+        <td class="e21 d"><%= @exam.e21[17]%></td>
+        <td class="e22 m"><%= @exam.e22[19]%></td>
+        <td class="e22 v"><%= @exam.e22[18]%></td>
+        <td class="e22 d"><%= @exam.e22[17]%></td>
+        <td class="e23 m"><%= @exam.e23[19]%></td>
+        <td class="e23 v"><%= @exam.e23[18]%></td>
+        <td class="e23 d"><%= @exam.e23[17]%></td>
+        <td class="e24 m"><%= @exam.e24[19]%></td>
+        <td class="e24 v"><%= @exam.e24[18]%></td>
+        <td class="e24 d"><%= @exam.e24[17]%></td>
+        <td class="e25 m"><%= @exam.e25[19]%></td>
+        <td class="e25 v"><%= @exam.e25[18]%></td>
+        <td class="e25 d"><%= @exam.e25[17]%></td>
+        <td class="e26 m"><%= @exam.e26[19]%></td>
+        <td class="e26 v"><%= @exam.e26[18]%></td>
+        <td class="e26 d"><%= @exam.e26[17]%></td>
+        <td class="e27 m"><%= @exam.e27[19]%></td>
+        <td class="e27 v"><%= @exam.e27[18]%></td>
+        <td class="e27 d"><%= @exam.e27[17]%></td>
+        <td class="e28 m"><%= @exam.e28[19]%></td>
+        <td class="e28 v"><%= @exam.e28[18]%></td>
+        <td class="e28 d"><%= @exam.e28[17]%></td>
+    </tr>
+
+    <tr class="forca M">
+        <td class="index">forca M</td>
+        <td colspan="3" class="e18"><%= @exam.e18[20]%></td>
+        <td colspan="3" class="e17"><%= @exam.e17[20]%></td>
+        <td colspan="3" class="e16"><%= @exam.e16[20]%></td>
+        <td colspan="3" class="e15"><%= @exam.e15[20]%></td>
+        <td colspan="3" class="e14"><%= @exam.e14[20]%></td>
+        <td colspan="18"></td>
+        <td colspan="3" class="e24"><%= @exam.e24[20]%></td>
+        <td colspan="3" class="e25"><%= @exam.e25[20]%></td>
+        <td colspan="3" class="e26"><%= @exam.e26[20]%></td>
+        <td colspan="3" class="e27"><%= @exam.e27[20]%></td>
+        <td colspan="3" class="e28"><%= @exam.e28[20]%></td>
+    </tr>
+
+    <tr class="forca D">
+        <td class="index">forca D</td>
+        <td colspan="3" class="e18"><%= @exam.e18[21]%></td>
+        <td colspan="3" class="e17"><%= @exam.e17[21]%></td>
+        <td colspan="3" class="e16"><%= @exam.e16[21]%></td>
+        <td colspan="3" class="e15"><%= @exam.e15[21]%></td>
+        <td colspan="3" class="e14"><%= @exam.e14[21]%></td>
+        <td colspan="18"></td>
+        <td colspan="3" class="e24"><%= @exam.e24[21]%></td>
+        <td colspan="3" class="e25"><%= @exam.e25[21]%></td>
+        <td colspan="3" class="e26"><%= @exam.e26[21]%></td>
+        <td colspan="3" class="e27"><%= @exam.e27[21]%></td>
+        <td colspan="3" class="e28"><%= @exam.e28[21]%></td>
+    </tr>
+
+    <tr class="forca V">
+        <td class="index">forca V</td>
+        <td colspan="3" class="e18"><%= @exam.e18[22]%></td>
+        <td colspan="3" class="e17"><%= @exam.e17[22]%></td>
+        <td colspan="3" class="e16"><%= @exam.e16[22]%></td>
+        <td colspan="30"></td>
+        <td colspan="3" class="e26"><%= @exam.e26[22]%></td>
+        <td colspan="3" class="e27"><%= @exam.e27[22]%></td>
+        <td colspan="3" class="e28"><%= @exam.e28[22]%></td>
+    </tr>
+
+    <tr class="mobilita">
+        <td class="index">mobilità</td>
+        <td colspan="3" class="e18"><%= @exam.e18[23]%></td>
+        <td colspan="3" class="e17"><%= @exam.e17[23]%></td>
+        <td colspan="3" class="e16"><%= @exam.e16[23]%></td>
+        <td colspan="3" class="e15"><%= @exam.e15[22]%></td>
+        <td colspan="3" class="e14"><%= @exam.e14[22]%></td>
+        <td colspan="3" class="e13"><%= @exam.e13[20]%></td>
+        <td colspan="3" class="e12"><%= @exam.e12[20]%></td>
+        <td colspan="3" class="e11"><%= @exam.e11[20]%></td>
+        <td colspan="3" class="e21"><%= @exam.e21[20]%></td>
+        <td colspan="3" class="e22"><%= @exam.e22[20]%></td>
+        <td colspan="3" class="e23"><%= @exam.e23[20]%></td>
+        <td colspan="3" class="e24"><%= @exam.e24[22]%></td>
+        <td colspan="3" class="e25"><%= @exam.e25[22]%></td>
+        <td colspan="3" class="e26"><%= @exam.e26[23]%></td>
+        <td colspan="3" class="e27"><%= @exam.e27[23]%></td>
+        <td colspan="3" class="e28"><%= @exam.e28[23]%></td>
+    </tr>
+
+    <tr class="chart">
+
+      <td class="index">Chart</td>
+      <td colspan="48"><div class="chart">
+        <canvas id="myChartSup" width="400" height="100"></canvas>
+      </div></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<script>
+var ctx = document.getElementById("myChartSup");
+var scatterChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        datasets: [{
+            label: 'Tasca Vestibolare',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e18[2]*(-1)%>
+            }, {
+                x: -8,
+                y: <%= @exam.e18[3]*(-1)%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e18[4]*(-1)%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e17[2]*(-1)%>
+            }, {
+                x: -7,
+                y: <%= @exam.e17[3]*(-1)%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e17[4]*(-1)%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e16[2]*(-1)%>
+            }, {
+                x: -6,
+                y: <%= @exam.e16[3]*(-1)%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e16[4]*(-1)%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e15[2]*(-1)%>
+            }, {
+                x: -5,
+                y: <%= @exam.e15[3]*(-1)%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e15[4]*(-1)%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e14[2]*(-1)%>
+            }, {
+                x: -4,
+                y: <%= @exam.e14[3]*(-1)%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e14[4]*(-1)%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e13[2]*(-1)%>
+            }, {
+                x: -3,
+                y: <%= @exam.e13[3]*(-1)%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e13[4]*(-1)%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e12[2]*(-1)%>
+            }, {
+                x: -2,
+                y: <%= @exam.e12[3]*(-1)%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e12[4]*(-1)%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e11[2]*(-1)%>
+            }, {
+                x: -1,
+                y: <%= @exam.e11[3]*(-1)%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e11[4]*(-1)%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e21[4]*(-1)%>
+            }, {
+                x: 1,
+                y: <%= @exam.e21[3]*(-1)%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e21[2]*(-1)%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e22[4]*(-1)%>
+            }, {
+                x: 2,
+                y: <%= @exam.e22[3]*(-1)%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e22[2]*(-1)%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e23[4]*(-1)%>
+            }, {
+                x: 3,
+                y: <%= @exam.e23[3]*(-1)%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e23[2]*(-1)%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e24[4]*(-1)%>
+            }, {
+                x: 4,
+                y: <%= @exam.e24[3]*(-1)%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e24[2]*(-1)%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e25[4]*(-1)%>
+            }, {
+                x: 5,
+                y: <%= @exam.e25[3]*(-1)%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e25[2]*(-1)%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e26[4]*(-1)%>
+            }, {
+                x: 6,
+                y: <%= @exam.e26[3]*(-1)%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e26[2]*(-1)%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e27[4]*(-1)%>
+            }, {
+                x: 7,
+                y: <%= @exam.e27[3]*(-1)%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e27[2]*(-1)%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e28[4]*(-1)%>
+            }, {
+                x: 8,
+                y: <%= @exam.e28[3]*(-1)%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e23[2]%>
+            }],
+            borderColor: ['rgb(181, 33, 79)'],
+            backgroundColor: ['rgba(237, 104, 156, 0.5)']
+        },{
+            label: 'Tasca Palatale',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e18[5]*(-1)%>
+            }, {
+                x: -8,
+                y: <%= @exam.e18[6]*(-1)%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e18[7]*(-1)%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e17[5]*(-1)%>
+            }, {
+                x: -7,
+                y: <%= @exam.e17[6]*(-1)%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e17[7]*(-1)%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e16[5]*(-1)%>
+            }, {
+                x: -6,
+                y: <%= @exam.e16[6]*(-1)%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e16[7]*(-1)%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e15[5]*(-1)%>
+            }, {
+                x: -5,
+                y: <%= @exam.e15[6]*(-1)%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e15[7]*(-1)%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e14[5]*(-1)%>
+            }, {
+                x: -4,
+                y: <%= @exam.e14[6]*(-1)%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e14[7]*(-1)%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e13[5]*(-1)%>
+            }, {
+                x: -3,
+                y: <%= @exam.e13[6]*(-1)%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e13[7]*(-1)%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e12[5]*(-1)%>
+            }, {
+                x: -2,
+                y: <%= @exam.e12[6]*(-1)%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e12[7]*(-1)%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e11[5]*(-1)%>
+            }, {
+                x: -1,
+                y: <%= @exam.e11[6]*(-1)%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e11[7]*(-1)%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e21[7]*(-1)%>
+            }, {
+                x: 1,
+                y: <%= @exam.e21[6]*(-1)%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e21[5]*(-1)%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e22[7]*(-1)%>
+            }, {
+                x: 2,
+                y: <%= @exam.e22[6]*(-1)%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e22[5]*(-1)%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e23[7]*(-1)%>
+            }, {
+                x: 3,
+                y: <%= @exam.e23[6]*(-1)%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e23[5]*(-1)%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e24[7]*(-1)%>
+            }, {
+                x: 4,
+                y: <%= @exam.e24[6]*(-1)%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e24[5]*(-1)%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e25[7]*(-1)%>
+            }, {
+                x: 5,
+                y: <%= @exam.e25[6]*(-1)%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e25[5]*(-1)%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e26[7]*(-1)%>
+            }, {
+                x: 6,
+                y: <%= @exam.e26[6]*(-1)%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e26[5]*(-1)%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e27[7]*(-1)%>
+            }, {
+                x: 7,
+                y: <%= @exam.e27[6]*(-1)%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e27[5]*(-1)%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e28[7]*(-1)%>
+            }, {
+                x: 8,
+                y: <%= @exam.e28[6]*(-1)%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e23[5]*(-1)%>
+            }],
+            borderColor: ['rgb(224, 38, 95)'],
+            backgroundColor: ['rgba(242, 167, 196, 0.5)']
+        },{
+            label: 'Recessione Vestibolare',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e18[8]*(-1)%>
+            }, {
+                x: -8,
+                y: <%= @exam.e18[9]*(-1)%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e18[10]*(-1)%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e17[8]*(-1)%>
+            }, {
+                x: -7,
+                y: <%= @exam.e17[9]*(-1)%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e17[10]*(-1)%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e16[8]*(-1)%>
+            }, {
+                x: -6,
+                y: <%= @exam.e16[9]*(-1)%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e16[10]*(-1)%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e15[8]*(-1)%>
+            }, {
+                x: -5,
+                y: <%= @exam.e15[9]*(-1)%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e15[10]*(-1)%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e14[8]*(-1)%>
+            }, {
+                x: -4,
+                y: <%= @exam.e14[9]*(-1)%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e14[10]*(-1)%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e13[8]*(-1)%>
+            }, {
+                x: -3,
+                y: <%= @exam.e13[9]*(-1)%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e13[10]*(-1)%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e12[8]*(-1)%>
+            }, {
+                x: -2,
+                y: <%= @exam.e12[9]*(-1)%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e12[10]*(-1)%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e11[8]*(-1)%>
+            }, {
+                x: -1,
+                y: <%= @exam.e11[9]*(-1)%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e11[10]*(-1)%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e21[10]*(-1)%>
+            }, {
+                x: 1,
+                y: <%= @exam.e21[9]*(-1)%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e21[8]*(-1)%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e22[10]*(-1)%>
+            }, {
+                x: 2,
+                y: <%= @exam.e22[9]*(-1)%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e22[8]*(-1)%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e23[10]*(-1)%>
+            }, {
+                x: 3,
+                y: <%= @exam.e23[9]*(-1)%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e23[8]*(-1)%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e24[10]*(-1)%>
+            }, {
+                x: 4,
+                y: <%= @exam.e24[9]*(-1)%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e24[8]*(-1)%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e25[10]*(-1)%>
+            }, {
+                x: 5,
+                y: <%= @exam.e25[9]*(-1)%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e25[8]*(-1)%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e26[10]*(-1)%>
+            }, {
+                x: 6,
+                y: <%= @exam.e26[9]*(-1)%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e26[8]*(-1)%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e27[10]*(-1)%>
+            }, {
+                x: 7,
+                y: <%= @exam.e27[9]*(-1)%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e27[8]*(-1)%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e28[10]*(-1)%>
+            }, {
+                x: 8,
+                y: <%= @exam.e28[9]*(-1)%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e23[8]*(-1)%>
+            }],
+            borderColor: ['rgb(92, 102, 238)'],
+            backgroundColor: ['rgba(79, 175, 236, 0.5)']
+        },{
+            label: 'Recessione Palatale',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e18[11]*(-1)%>
+            }, {
+                x: -8,
+                y: <%= @exam.e18[12]*(-1)%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e18[13]*(-1)%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e17[11]*(-1)%>
+            }, {
+                x: -7,
+                y: <%= @exam.e17[12]*(-1)%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e17[13]*(-1)%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e16[11]*(-1)%>
+            }, {
+                x: -6,
+                y: <%= @exam.e16[12]*(-1)%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e16[13]*(-1)%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e15[11]*(-1)%>
+            }, {
+                x: -5,
+                y: <%= @exam.e15[12]*(-1)%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e15[13]*(-1)%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e14[11]*(-1)%>
+            }, {
+                x: -4,
+                y: <%= @exam.e14[12]*(-1)%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e14[13]*(-1)%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e13[11]*(-1)%>
+            }, {
+                x: -3,
+                y: <%= @exam.e13[12]*(-1)%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e13[13]*(-1)%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e12[11]*(-1)%>
+            }, {
+                x: -2,
+                y: <%= @exam.e12[12]*(-1)%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e12[13]*(-1)%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e11[11]*(-1)%>
+            }, {
+                x: -1,
+                y: <%= @exam.e11[12]*(-1)%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e11[13]*(-1)%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e21[13]*(-1)%>
+            }, {
+                x: 1,
+                y: <%= @exam.e21[12]*(-1)%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e21[11]*(-1)%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e22[13]*(-1)%>
+            }, {
+                x: 2,
+                y: <%= @exam.e22[12]*(-1)%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e22[11]*(-1)%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e23[13]*(-1)%>
+            }, {
+                x: 3,
+                y: <%= @exam.e23[12]*(-1)%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e23[11]*(-1)%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e24[13]*(-1)%>
+            }, {
+                x: 4,
+                y: <%= @exam.e24[12]*(-1)%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e24[11]*(-1)%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e25[13]*(-1)%>
+            }, {
+                x: 5,
+                y: <%= @exam.e25[12]*(-1)%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e25[11]*(-1)%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e26[13]*(-1)%>
+            }, {
+                x: 6,
+                y: <%= @exam.e26[12]*(-1)%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e26[11]*(-1)%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e27[13]*(-1)%>
+            }, {
+                x: 7,
+                y: <%= @exam.e27[12]*(-1)%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e27[11]*(-1)%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e28[13]*(-1)%>
+            }, {
+                x: 8,
+                y: <%= @exam.e28[12]*(-1)%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e23[11]*(-1)%>
+            }],
+            borderColor: ['rgb(125, 133, 236)'],
+            backgroundColor: ['rgba(111, 186, 233, 0.5)']
+        },{
+            label: 'Perdita d"attacco Vestibolare',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e18[14]*(-1)%>
+            }, {
+                x: -8,
+                y: <%= @exam.e18[15]*(-1)%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e18[16]*(-1)%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e17[14]*(-1)%>
+            }, {
+                x: -7,
+                y: <%= @exam.e17[15]*(-1)%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e17[16]*(-1)%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e16[14]*(-1)%>
+            }, {
+                x: -6,
+                y: <%= @exam.e16[15]*(-1)%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e16[16]*(-1)%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e15[14]*(-1)%>
+            }, {
+                x: -5,
+                y: <%= @exam.e15[15]*(-1)%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e15[16]*(-1)%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e14[14]*(-1)%>
+            }, {
+                x: -4,
+                y: <%= @exam.e14[15]*(-1)%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e14[16]*(-1)%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e13[14]*(-1)%>
+            }, {
+                x: -3,
+                y: <%= @exam.e13[15]*(-1)%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e13[16]*(-1)%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e12[14]*(-1)%>
+            }, {
+                x: -2,
+                y: <%= @exam.e12[15]*(-1)%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e12[16]*(-1)%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e11[14]*(-1)%>
+            }, {
+                x: -1,
+                y: <%= @exam.e11[15]*(-1)%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e11[16]*(-1)%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e21[16]*(-1)%>
+            }, {
+                x: 1,
+                y: <%= @exam.e21[15]*(-1)%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e21[14]*(-1)%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e22[16]*(-1)%>
+            }, {
+                x: 2,
+                y: <%= @exam.e22[15]*(-1)%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e22[14]*(-1)%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e23[16]*(-1)%>
+            }, {
+                x: 3,
+                y: <%= @exam.e23[15]*(-1)%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e23[14]*(-1)%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e24[16]*(-1)%>
+            }, {
+                x: 4,
+                y: <%= @exam.e24[15]*(-1)%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e24[14]*(-1)%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e25[16]*(-1)%>
+            }, {
+                x: 5,
+                y: <%= @exam.e25[15]*(-1)%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e25[14]*(-1)%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e26[16]*(-1)%>
+            }, {
+                x: 6,
+                y: <%= @exam.e26[15]*(-1)%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e26[14]*(-1)%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e27[16]*(-1)%>
+            }, {
+                x: 7,
+                y: <%= @exam.e27[15]*(-1)%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e27[14]*(-1)%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e28[16]*(-1)%>
+            }, {
+                x: 8,
+                y: <%= @exam.e28[15]*(-1)%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e23[14]*(-1)%>
+            }],
+            borderColor: ['rgb(104, 230, 84)'],
+            backgroundColor: ['rgba(104, 233, 83, 0.5)']
+        },{
+            label: 'Perdita d"attacco Palatale',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e18[17]*(-1)%>
+            }, {
+                x: -8,
+                y: <%= @exam.e18[18]*(-1)%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e18[19]*(-1)%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e17[17]*(-1)%>
+            }, {
+                x: -7,
+                y: <%= @exam.e17[18]*(-1)%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e17[19]*(-1)%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e16[17]*(-1)%>
+            }, {
+                x: -6,
+                y: <%= @exam.e16[18]*(-1)%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e16[19]*(-1)%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e15[17]*(-1)%>
+            }, {
+                x: -5,
+                y: <%= @exam.e15[18]*(-1)%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e15[19]*(-1)%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e14[17]*(-1)%>
+            }, {
+                x: -4,
+                y: <%= @exam.e14[18]*(-1)%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e14[19]*(-1)%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e13[17]*(-1)%>
+            }, {
+                x: -3,
+                y: <%= @exam.e13[18]*(-1)%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e13[19]*(-1)%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e12[17]*(-1)%>
+            }, {
+                x: -2,
+                y: <%= @exam.e12[18]*(-1)%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e12[19]*(-1)%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e11[17]*(-1)%>
+            }, {
+                x: -1,
+                y: <%= @exam.e11[18]*(-1)%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e11[19]*(-1)%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e21[19]*(-1)%>
+            }, {
+                x: 1,
+                y: <%= @exam.e21[18]*(-1)%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e21[17]*(-1)%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e22[19]*(-1)%>
+            }, {
+                x: 2,
+                y: <%= @exam.e22[18]*(-1)%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e22[17]*(-1)%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e23[19]*(-1)%>
+            }, {
+                x: 3,
+                y: <%= @exam.e23[18]*(-1)%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e23[17]*(-1)%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e24[19]*(-1)%>
+            }, {
+                x: 4,
+                y: <%= @exam.e24[18]*(-1)%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e24[17]*(-1)%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e25[19]*(-1)%>
+            }, {
+                x: 5,
+                y: <%= @exam.e25[18]*(-1)%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e25[17]*(-1)%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e26[19]*(-1)%>
+            }, {
+                x: 6,
+                y: <%= @exam.e26[18]*(-1)%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e26[17]*(-1)%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e27[19]*(-1)%>
+            }, {
+                x: 7,
+                y: <%= @exam.e27[18]*(-1)%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e27[17]*(-1)%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e28[19]*(-1)%>
+            }, {
+                x: 8,
+                y: <%= @exam.e28[18]*(-1)%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e23[17]*(-1)%>
+            }],
+            borderColor: ['rgb(126, 205, 114)'],
+            backgroundColor: ['rgba(152, 235, 138, 0.5)']
+        }
+      ]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                type: 'linear',
+                position: 'bottom',
+                ticks: {
+                    max: 8.5,
+                    min: -8.5,
+                    stepSize: 1
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    stepSize: 1
+                }
+            }]
+        }
+    }
+});
+</script>
+
+
+
+
+<!-- ARCATA INFERIORE -->
+
+<!-- TODO: sistemare la arcata infeiore -->
+<p class="print-break"></p>
+<h2 class="text-center">Arcata Inferiore</h2>
+<table class="exam">
+  <thead>
+    <tr class="indice">
+        <td colspan="1" rowspan="3" class="indice">indice</td>
+        <td colspan="3" class="e48" data-site=".e48">48</td>
+        <td colspan="3" class="e47" data-site=".e47">47</td>
+        <td colspan="3" class="e46" data-site=".e46">46</td>
+        <td colspan="3" class="e45" data-site=".e45">45</td>
+        <td colspan="3" class="e44" data-site=".e44">44</td>
+        <td colspan="3" class="e43" data-site=".e43">43</td>
+        <td colspan="3" class="e42" data-site=".e42">42</td>
+        <td colspan="3" class="e41" data-site=".e41">41</td>
+        <td colspan="3" class="e31" data-site=".e31">31</td>
+        <td colspan="3" class="e32" data-site=".e32">32</td>
+        <td colspan="3" class="e33"  data-site=".33">33</td>
+        <td colspan="3" class="e34"  data-site=".e34">34</td>
+        <td colspan="3" class="e35"  data-site=".e35">35</td>
+        <td colspan="3" class="e36"  data-site=".e36">36</td>
+        <td colspan="3" class="e37"  data-site=".e37">37</td>
+        <td colspan="3" class="e38"  data-site=".e38">38</td>
+    </tr>
+    <tr>
+        <td class="e18">D</td>
+        <td class="e18">V</td>
+        <td class="e18">M</td>
+
+        <td class="e17">D</td>
+        <td class="e17">V</td>
+        <td class="e17">M</td>
+
+        <td class="e16">D</td>
+        <td class="e16">V</td>
+        <td class="e16">M</td>
+
+        <td class="e15">D</td>
+        <td class="e15">V</td>
+        <td class="e15">M</td>
+
+        <td class="e14">D</td>
+        <td class="e14">V</td>
+        <td class="e14">M</td>
+
+        <td class="e13">D</td>
+        <td class="e13">V</td>
+        <td class="e13">M</td>
+
+        <td class="e12">D</td>
+        <td class="e12">V</td>
+        <td class="e12">M</td>
+
+        <td class="e11">D</td>
+        <td class="e11">V</td>
+        <td class="e11">M</td>
+
+        <td class="e21">M</td>
+        <td class="e21">V</td>
+        <td class="e21">D</td>
+
+        <td class="e22">M</td>
+        <td class="e22">V</td>
+        <td class="e22">D</td>
+
+        <td class="e23">M</td>
+        <td class="e23">V</td>
+        <td class="e23">D</td>
+
+        <td class="e24">M</td>
+        <td class="e24">V</td>
+        <td class="e24">D</td>
+
+        <td class="e25">M</td>
+        <td class="e25">V</td>
+        <td class="e25">D</td>
+
+        <td class="e26">M</td>
+        <td class="e26">V</td>
+        <td class="e26">D</td>
+
+        <td class="e27">M</td>
+        <td class="e27">V</td>
+        <td class="e27">D</td>
+
+        <td class="e28">M</td>
+        <td class="e28">V</td>
+        <td class="e28">D</td>
+    </tr>
+</thead>
+<tbody>
+    <tr class="assenza">
+        <td class="index">elemento assente</td>
+        <td colspan="3" class="e48"><input type="checkbox" class="assenza" data-element=".e48"<% if @exam.e48[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e47"><input type="checkbox" class="assenza" data-element=".e47"<% if @exam.e47[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e46"><input type="checkbox" class="assenza" data-element=".e46"<% if @exam.e46[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e45"><input type="checkbox" class="assenza" data-element=".e45"<% if @exam.e45[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e44"><input type="checkbox" class="assenza" data-element=".e44"<% if @exam.e44[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e43"><input type="checkbox" class="assenza" data-element=".e43"<% if @exam.e43[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e42"><input type="checkbox" class="assenza" data-element=".e42"<% if @exam.e42[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e41"><input type="checkbox" class="assenza" data-element=".e41"<% if @exam.e41[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e31"><input type="checkbox" class="assenza" data-element=".e31"<% if @exam.e31[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e32"><input type="checkbox" class="assenza" data-element=".e32"<% if @exam.e32[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e33"><input type="checkbox" class="assenza" data-element=".e33"<% if @exam.e33[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e34"><input type="checkbox" class="assenza" data-element=".e34"<% if @exam.e34[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e35"><input type="checkbox" class="assenza" data-element=".e35"<% if @exam.e35[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e36"><input type="checkbox" class="assenza" data-element=".e36"<% if @exam.e36[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e37"><input type="checkbox" class="assenza" data-element=".e37"<% if @exam.e37[0] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e38"><input type="checkbox" class="assenza" data-element=".e38"<% if @exam.e38[0] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="impianto">
+        <td class="index">impianto</td>
+        <td colspan="3" class="e48"><input type="checkbox" class="impianto" data-element=".e48"<% if @exam.e48[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e47"><input type="checkbox" class="impianto" data-element=".e47"<% if @exam.e47[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e46"><input type="checkbox" class="impianto" data-element=".e46"<% if @exam.e46[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e45"><input type="checkbox" class="impianto" data-element=".e45"<% if @exam.e45[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e44"><input type="checkbox" class="impianto" data-element=".e44"<% if @exam.e44[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e43"><input type="checkbox" class="impianto" data-element=".e43"<% if @exam.e43[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e42"><input type="checkbox" class="impianto" data-element=".e42"<% if @exam.e42[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e41"><input type="checkbox" class="impianto" data-element=".e41"<% if @exam.e41[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e31"><input type="checkbox" class="impianto" data-element=".e31"<% if @exam.e31[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e32"><input type="checkbox" class="impianto" data-element=".e32"<% if @exam.e32[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e33"><input type="checkbox" class="impianto" data-element=".e33"<% if @exam.e33[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e34"><input type="checkbox" class="impianto" data-element=".e34"<% if @exam.e34[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e35"><input type="checkbox" class="impianto" data-element=".e35"<% if @exam.e35[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e36"><input type="checkbox" class="impianto" data-element=".e36"<% if @exam.e36[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e37"><input type="checkbox" class="impianto" data-element=".e37"<% if @exam.e37[1] == 1 %> checked <% end %>></td>
+        <td colspan="3" class="e38"><input type="checkbox" class="impianto" data-element=".e38"<% if @exam.e38[1] == 1 %> checked <% end %>></td>
+    </tr>
+    <tr class="tasca V">
+        <td class="index">tasca V</td>
+        <td class="e48 d"><%= @exam.e48[2]%></td>
+        <td class="e48 v"><%= @exam.e48[3]%></td>
+        <td class="e48 m"><%= @exam.e48[4]%></td>
+        <td class="e47 d"><%= @exam.e47[2]%></td>
+        <td class="e47 v"><%= @exam.e47[3]%></td>
+        <td class="e47 m"><%= @exam.e47[4]%></td>
+        <td class="e46 d"><%= @exam.e46[2]%></td>
+        <td class="e46 v"><%= @exam.e46[3]%></td>
+        <td class="e46 m"><%= @exam.e46[4]%></td>
+        <td class="e45 d"><%= @exam.e45[2]%></td>
+        <td class="e45 v"><%= @exam.e45[3]%></td>
+        <td class="e45 m"><%= @exam.e45[4]%></td>
+        <td class="e44 d"><%= @exam.e44[2]%></td>
+        <td class="e44 v"><%= @exam.e44[3]%></td>
+        <td class="e44 m"><%= @exam.e44[4]%></td>
+        <td class="e43 d"><%= @exam.e43[2]%></td>
+        <td class="e43 v"><%= @exam.e43[3]%></td>
+        <td class="e43 m"><%= @exam.e43[4]%></td>
+        <td class="e42 d"><%= @exam.e42[2]%></td>
+        <td class="e42 v"><%= @exam.e42[3]%></td>
+        <td class="e42 m"><%= @exam.e42[4]%></td>
+        <td class="e41 d"><%= @exam.e41[2]%></td>
+        <td class="e41 v"><%= @exam.e41[3]%></td>
+        <td class="e41 m"><%= @exam.e41[4]%></td>
+        <td class="e31 m"><%= @exam.e31[4]%></td>
+        <td class="e31 v"><%= @exam.e31[3]%></td>
+        <td class="e31 d"><%= @exam.e31[2]%></td>
+        <td class="e32 m"><%= @exam.e32[4]%></td>
+        <td class="e32 v"><%= @exam.e32[3]%></td>
+        <td class="e32 d"><%= @exam.e32[2]%></td>
+        <td class="e33 m"><%= @exam.e33[4]%></td>
+        <td class="e33 v"><%= @exam.e33[3]%></td>
+        <td class="e33 d"><%= @exam.e33[2]%></td>
+        <td class="e34 m"><%= @exam.e34[4]%></td>
+        <td class="e34 v"><%= @exam.e34[3]%></td>
+        <td class="e34 d"><%= @exam.e34[2]%></td>
+        <td class="e35 m"><%= @exam.e35[4]%></td>
+        <td class="e35 v"><%= @exam.e35[3]%></td>
+        <td class="e35 d"><%= @exam.e35[2]%></td>
+        <td class="e36 m"><%= @exam.e36[4]%></td>
+        <td class="e36 v"><%= @exam.e36[3]%></td>
+        <td class="e36 d"><%= @exam.e36[2]%></td>
+        <td class="e37 m"><%= @exam.e37[4]%></td>
+        <td class="e37 v"><%= @exam.e37[3]%></td>
+        <td class="e37 d"><%= @exam.e37[2]%></td>
+        <td class="e38 m"><%= @exam.e38[4]%></td>
+        <td class="e38 v"><%= @exam.e38[3]%></td>
+        <td class="e38 d"><%= @exam.e38[2]%></td>
+    </tr>
+
+    <tr class="Sang V">
+        <td class="index">Sanguinamento V</td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[24] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[25] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[26] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[24] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[25] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[26] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[24] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[25] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[26] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[23] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[24] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[25] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[23] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[24] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[25] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[21] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[22] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[23] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[21] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[22] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[23] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[21] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[22] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[23] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[23] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[22] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[21] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[23] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[22] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[21] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[23] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[22] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[21] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[24] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[22] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[22] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[24] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[23] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[22] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[26] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[25] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[24] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[26] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[25] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[24] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[26] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[25] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[24] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="Placca V">
+        <td class="index">Placca V</td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[30] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[31] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[32] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[30] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[31] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[32] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[30] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[31] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[32] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[29] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[30] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[31] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[29] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[30] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[31] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[27] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[28] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[29] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[27] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[28] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[29] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[27] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[28] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[29] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[29] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[28] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[27] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[29] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[28] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[27] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[29] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[28] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[27] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[30] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[29] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[28] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[30] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[29] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[28] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[32] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[31] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[30] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[32] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[31] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[30] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[32] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[31] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[30] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="Pus V">
+        <td class="index">Pus V</td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[36] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[37] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[38] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[36] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[37] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[38] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[36] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[37] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[38] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[35] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[36] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[37] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[34] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[35] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[36] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[33] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[34] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[35] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[33] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[34] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[35] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[33] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[34] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[35] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[35] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[34] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[33] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[35] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[34] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[33] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[35] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[34] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[33] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[36] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[35] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[34] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[36] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[35] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[34] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[38] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[37] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[36] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[38] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[37] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[36] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[38] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[37] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[36] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="tasca P">
+        <td class="index">tasca P</td>
+        <td class="e48 d"><%= @exam.e48[5]%></td>
+        <td class="e48 v"><%= @exam.e48[6]%></td>
+        <td class="e48 m"><%= @exam.e48[7]%></td>
+        <td class="e47 d"><%= @exam.e47[5]%></td>
+        <td class="e47 v"><%= @exam.e47[6]%></td>
+        <td class="e47 m"><%= @exam.e47[7]%></td>
+        <td class="e46 d"><%= @exam.e46[5]%></td>
+        <td class="e46 v"><%= @exam.e46[6]%></td>
+        <td class="e46 m"><%= @exam.e46[7]%></td>
+        <td class="e45 d"><%= @exam.e45[5]%></td>
+        <td class="e45 v"><%= @exam.e45[6]%></td>
+        <td class="e45 m"><%= @exam.e45[7]%></td>
+        <td class="e44 d"><%= @exam.e44[5]%></td>
+        <td class="e44 v"><%= @exam.e44[6]%></td>
+        <td class="e44 m"><%= @exam.e44[7]%></td>
+        <td class="e43 d"><%= @exam.e43[5]%></td>
+        <td class="e43 v"><%= @exam.e43[6]%></td>
+        <td class="e43 m"><%= @exam.e43[7]%></td>
+        <td class="e42 d"><%= @exam.e42[5]%></td>
+        <td class="e42 v"><%= @exam.e42[6]%></td>
+        <td class="e42 m"><%= @exam.e42[7]%></td>
+        <td class="e41 d"><%= @exam.e41[5]%></td>
+        <td class="e41 v"><%= @exam.e41[6]%></td>
+        <td class="e41 m"><%= @exam.e41[7]%></td>
+        <td class="e31 m"><%= @exam.e31[7]%></td>
+        <td class="e31 v"><%= @exam.e31[6]%></td>
+        <td class="e31 d"><%= @exam.e31[5]%></td>
+        <td class="e32 m"><%= @exam.e32[7]%></td>
+        <td class="e32 v"><%= @exam.e32[6]%></td>
+        <td class="e32 d"><%= @exam.e32[5]%></td>
+        <td class="e33 m"><%= @exam.e33[7]%></td>
+        <td class="e33 v"><%= @exam.e33[6]%></td>
+        <td class="e33 d"><%= @exam.e33[5]%></td>
+        <td class="e34 m"><%= @exam.e34[7]%></td>
+        <td class="e34 v"><%= @exam.e34[6]%></td>
+        <td class="e34 d"><%= @exam.e34[5]%></td>
+        <td class="e35 m"><%= @exam.e35[7]%></td>
+        <td class="e35 v"><%= @exam.e35[6]%></td>
+        <td class="e35 d"><%= @exam.e35[5]%></td>
+        <td class="e36 m"><%= @exam.e36[7]%></td>
+        <td class="e36 v"><%= @exam.e36[6]%></td>
+        <td class="e36 d"><%= @exam.e36[5]%></td>
+        <td class="e37 m"><%= @exam.e37[7]%></td>
+        <td class="e37 v"><%= @exam.e37[6]%></td>
+        <td class="e37 d"><%= @exam.e37[5]%></td>
+        <td class="e38 m"><%= @exam.e38[7]%></td>
+        <td class="e38 v"><%= @exam.e38[6]%></td>
+        <td class="e38 d"><%= @exam.e38[5]%></td>
+    </tr>
+
+    <tr class="Sang P">
+        <td class="index">Sanguinamento P</td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[27] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[28] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[29] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[27] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[28] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[29] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[27] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[28] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[29] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[26] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[27] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[28] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[26] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[27] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[28] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[24] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[25] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[26] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[24] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[25] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[26] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[24] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[25] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[26] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[26] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[25] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[24] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[26] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[25] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[24] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[26] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[25] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[24] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[27] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[26] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[25] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[27] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[26] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[25] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[29] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[28] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[27] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[29] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[28] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[27] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[29] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[28] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[27] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="Placca P">
+        <td class="index">Placca P</td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[33] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[34] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[35] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[33] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[34] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[35] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[33] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[34] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[35] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[32] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[33] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[34] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[32] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[33] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[34] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[30] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[31] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[32] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[30] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[31] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[32] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[30] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[31] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[32] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[32] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[31] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[30] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[32] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[31] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[30] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[32] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[31] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[30] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[33] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[32] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[31] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[33] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[32] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[31] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[35] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[34] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[33] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[35] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[34] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[33] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[35] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[34] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[33] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="Pus P">
+        <td class="index">Pus P</td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[39] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[40] == 1 %> checked <% end %>></td>
+        <td class="e48"><input type="checkbox"<% if @exam.e48[41] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[39] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[40] == 1 %> checked <% end %>></td>
+        <td class="e47"><input type="checkbox"<% if @exam.e47[41] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[39] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[40] == 1 %> checked <% end %>></td>
+        <td class="e46"><input type="checkbox"<% if @exam.e46[41] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[38] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[39] == 1 %> checked <% end %>></td>
+        <td class="e45"><input type="checkbox"<% if @exam.e45[40] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[37] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[38] == 1 %> checked <% end %>></td>
+        <td class="e44"><input type="checkbox"<% if @exam.e44[39] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[36] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[37] == 1 %> checked <% end %>></td>
+        <td class="e43"><input type="checkbox"<% if @exam.e43[38] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[36] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[37] == 1 %> checked <% end %>></td>
+        <td class="e42"><input type="checkbox"<% if @exam.e42[38] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[36] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[37] == 1 %> checked <% end %>></td>
+        <td class="e41"><input type="checkbox"<% if @exam.e41[38] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[38] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[37] == 1 %> checked <% end %>></td>
+        <td class="e31"><input type="checkbox"<% if @exam.e31[36] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[38] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[37] == 1 %> checked <% end %>></td>
+        <td class="e32"><input type="checkbox"<% if @exam.e32[36] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[38] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[37] == 1 %> checked <% end %>></td>
+        <td class="e33"><input type="checkbox"<% if @exam.e33[36] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[39] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[38] == 1 %> checked <% end %>></td>
+        <td class="e34"><input type="checkbox"<% if @exam.e34[37] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[39] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[38] == 1 %> checked <% end %>></td>
+        <td class="e35"><input type="checkbox"<% if @exam.e35[37] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[41] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[40] == 1 %> checked <% end %>></td>
+        <td class="e36"><input type="checkbox"<% if @exam.e36[39] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[41] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[40] == 1 %> checked <% end %>></td>
+        <td class="e37"><input type="checkbox"<% if @exam.e37[39] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[42] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[40] == 1 %> checked <% end %>></td>
+        <td class="e38"><input type="checkbox"<% if @exam.e38[39] == 1 %> checked <% end %>></td>
+    </tr>
+
+    <tr class="recessione V">
+        <td class="index">recessione V</td>
+        <td class="e48 d"><%= @exam.e48[8]%></td>
+        <td class="e48 v"><%= @exam.e48[9]%></td>
+        <td class="e48 m"><%= @exam.e48[10]%></td>
+        <td class="e47 d"><%= @exam.e47[8]%></td>
+        <td class="e47 v"><%= @exam.e47[9]%></td>
+        <td class="e47 m"><%= @exam.e47[10]%></td>
+        <td class="e46 d"><%= @exam.e46[8]%></td>
+        <td class="e46 v"><%= @exam.e46[9]%></td>
+        <td class="e46 m"><%= @exam.e46[10]%></td>
+        <td class="e45 d"><%= @exam.e45[8]%></td>
+        <td class="e45 v"><%= @exam.e45[9]%></td>
+        <td class="e45 m"><%= @exam.e45[10]%></td>
+        <td class="e44 d"><%= @exam.e44[8]%></td>
+        <td class="e44 v"><%= @exam.e44[9]%></td>
+        <td class="e44 m"><%= @exam.e44[10]%></td>
+        <td class="e43 d"><%= @exam.e43[8]%></td>
+        <td class="e43 v"><%= @exam.e43[9]%></td>
+        <td class="e43 m"><%= @exam.e43[10]%></td>
+        <td class="e42 d"><%= @exam.e42[8]%></td>
+        <td class="e42 v"><%= @exam.e42[9]%></td>
+        <td class="e42 m"><%= @exam.e42[10]%></td>
+        <td class="e41 d"><%= @exam.e41[8]%></td>
+        <td class="e41 v"><%= @exam.e41[9]%></td>
+        <td class="e41 m"><%= @exam.e41[10]%></td>
+        <td class="e31 m"><%= @exam.e31[10]%></td>
+        <td class="e31 v"><%= @exam.e31[9]%></td>
+        <td class="e31 d"><%= @exam.e31[8]%></td>
+        <td class="e32 m"><%= @exam.e32[10]%></td>
+        <td class="e32 v"><%= @exam.e32[9]%></td>
+        <td class="e32 d"><%= @exam.e32[8]%></td>
+        <td class="e33 m"><%= @exam.e33[10]%></td>
+        <td class="e33 v"><%= @exam.e33[9]%></td>
+        <td class="e33 d"><%= @exam.e33[8]%></td>
+        <td class="e34 m"><%= @exam.e34[10]%></td>
+        <td class="e34 v"><%= @exam.e34[9]%></td>
+        <td class="e34 d"><%= @exam.e34[8]%></td>
+        <td class="e35 m"><%= @exam.e35[10]%></td>
+        <td class="e35 v"><%= @exam.e35[9]%></td>
+        <td class="e35 d"><%= @exam.e35[8]%></td>
+        <td class="e36 m"><%= @exam.e36[10]%></td>
+        <td class="e36 v"><%= @exam.e36[9]%></td>
+        <td class="e36 d"><%= @exam.e36[8]%></td>
+        <td class="e37 m"><%= @exam.e37[10]%></td>
+        <td class="e37 v"><%= @exam.e37[9]%></td>
+        <td class="e37 d"><%= @exam.e37[8]%></td>
+        <td class="e38 m"><%= @exam.e38[10]%></td>
+        <td class="e38 v"><%= @exam.e38[9]%></td>
+        <td class="e38 d"><%= @exam.e38[8]%></td>
+    </tr>
+
+    <tr class="recessione P">
+        <td class="index">recessione P</td>
+        <td class="e48 d"><%= @exam.e48[11]%></td>
+        <td class="e48 v"><%= @exam.e48[12]%></td>
+        <td class="e48 m"><%= @exam.e48[13]%></td>
+        <td class="e47 d"><%= @exam.e47[11]%></td>
+        <td class="e47 v"><%= @exam.e47[12]%></td>
+        <td class="e47 m"><%= @exam.e47[13]%></td>
+        <td class="e46 d"><%= @exam.e46[11]%></td>
+        <td class="e46 v"><%= @exam.e46[12]%></td>
+        <td class="e46 m"><%= @exam.e46[13]%></td>
+        <td class="e45 d"><%= @exam.e45[11]%></td>
+        <td class="e45 v"><%= @exam.e45[12]%></td>
+        <td class="e45 m"><%= @exam.e45[13]%></td>
+        <td class="e44 d"><%= @exam.e44[11]%></td>
+        <td class="e44 v"><%= @exam.e44[12]%></td>
+        <td class="e44 m"><%= @exam.e44[13]%></td>
+        <td class="e43 d"><%= @exam.e43[11]%></td>
+        <td class="e43 v"><%= @exam.e43[12]%></td>
+        <td class="e43 m"><%= @exam.e43[13]%></td>
+        <td class="e42 d"><%= @exam.e42[11]%></td>
+        <td class="e42 v"><%= @exam.e42[12]%></td>
+        <td class="e42 m"><%= @exam.e42[13]%></td>
+        <td class="e41 d"><%= @exam.e41[11]%></td>
+        <td class="e41 v"><%= @exam.e41[12]%></td>
+        <td class="e41 m"><%= @exam.e41[13]%></td>
+        <td class="e31 m"><%= @exam.e31[13]%></td>
+        <td class="e31 v"><%= @exam.e31[12]%></td>
+        <td class="e31 d"><%= @exam.e31[11]%></td>
+        <td class="e32 m"><%= @exam.e32[13]%></td>
+        <td class="e32 v"><%= @exam.e32[12]%></td>
+        <td class="e32 d"><%= @exam.e32[11]%></td>
+        <td class="e33 m"><%= @exam.e33[13]%></td>
+        <td class="e33 v"><%= @exam.e33[12]%></td>
+        <td class="e33 d"><%= @exam.e33[11]%></td>
+        <td class="e34 m"><%= @exam.e34[13]%></td>
+        <td class="e34 v"><%= @exam.e34[12]%></td>
+        <td class="e34 d"><%= @exam.e34[11]%></td>
+        <td class="e35 m"><%= @exam.e35[13]%></td>
+        <td class="e35 v"><%= @exam.e35[12]%></td>
+        <td class="e35 d"><%= @exam.e35[11]%></td>
+        <td class="e36 m"><%= @exam.e36[13]%></td>
+        <td class="e36 v"><%= @exam.e36[12]%></td>
+        <td class="e36 d"><%= @exam.e36[11]%></td>
+        <td class="e37 m"><%= @exam.e37[13]%></td>
+        <td class="e37 v"><%= @exam.e37[12]%></td>
+        <td class="e37 d"><%= @exam.e37[11]%></td>
+        <td class="e38 m"><%= @exam.e38[13]%></td>
+        <td class="e38 v"><%= @exam.e38[12]%></td>
+        <td class="e38 d"><%= @exam.e38[11]%></td>
+    </tr>
+
+    <tr class="PA V">
+        <td class="index">Perdita d'attacco V</td>
+        <td class="e48 d"><%= @exam.e48[14]%></td>
+        <td class="e48 v"><%= @exam.e48[15]%></td>
+        <td class="e48 m"><%= @exam.e48[16]%></td>
+        <td class="e47 d"><%= @exam.e47[14]%></td>
+        <td class="e47 v"><%= @exam.e47[15]%></td>
+        <td class="e47 m"><%= @exam.e47[16]%></td>
+        <td class="e46 d"><%= @exam.e46[14]%></td>
+        <td class="e46 v"><%= @exam.e46[15]%></td>
+        <td class="e46 m"><%= @exam.e46[16]%></td>
+        <td class="e45 d"><%= @exam.e45[14]%></td>
+        <td class="e45 v"><%= @exam.e45[15]%></td>
+        <td class="e45 m"><%= @exam.e45[16]%></td>
+        <td class="e44 d"><%= @exam.e44[14]%></td>
+        <td class="e44 v"><%= @exam.e44[15]%></td>
+        <td class="e44 m"><%= @exam.e44[16]%></td>
+        <td class="e43 d"><%= @exam.e43[14]%></td>
+        <td class="e43 v"><%= @exam.e43[15]%></td>
+        <td class="e43 m"><%= @exam.e43[16]%></td>
+        <td class="e42 d"><%= @exam.e42[14]%></td>
+        <td class="e42 v"><%= @exam.e42[15]%></td>
+        <td class="e42 m"><%= @exam.e42[16]%></td>
+        <td class="e41 d"><%= @exam.e41[14]%></td>
+        <td class="e41 v"><%= @exam.e41[15]%></td>
+        <td class="e41 m"><%= @exam.e41[16]%></td>
+        <td class="e31 m"><%= @exam.e31[16]%></td>
+        <td class="e31 v"><%= @exam.e31[15]%></td>
+        <td class="e31 d"><%= @exam.e31[14]%></td>
+        <td class="e32 m"><%= @exam.e32[16]%></td>
+        <td class="e32 v"><%= @exam.e32[15]%></td>
+        <td class="e32 d"><%= @exam.e32[14]%></td>
+        <td class="e33 m"><%= @exam.e33[16]%></td>
+        <td class="e33 v"><%= @exam.e33[15]%></td>
+        <td class="e33 d"><%= @exam.e33[14]%></td>
+        <td class="e34 m"><%= @exam.e34[16]%></td>
+        <td class="e34 v"><%= @exam.e34[15]%></td>
+        <td class="e34 d"><%= @exam.e34[14]%></td>
+        <td class="e35 m"><%= @exam.e35[16]%></td>
+        <td class="e35 v"><%= @exam.e35[15]%></td>
+        <td class="e35 d"><%= @exam.e35[14]%></td>
+        <td class="e36 m"><%= @exam.e36[16]%></td>
+        <td class="e36 v"><%= @exam.e36[15]%></td>
+        <td class="e36 d"><%= @exam.e36[14]%></td>
+        <td class="e37 m"><%= @exam.e37[16]%></td>
+        <td class="e37 v"><%= @exam.e37[15]%></td>
+        <td class="e37 d"><%= @exam.e37[14]%></td>
+        <td class="e38 m"><%= @exam.e38[16]%></td>
+        <td class="e38 v"><%= @exam.e38[15]%></td>
+        <td class="e38 d"><%= @exam.e38[14]%></td>
+    </tr>
+
+    <tr class="PA P">
+        <td class="index">Perdita d'attacco P</td>
+        <td class="e48 d"><%= @exam.e48[17]%></td>
+        <td class="e48 v"><%= @exam.e48[18]%></td>
+        <td class="e48 m"><%= @exam.e48[19]%></td>
+        <td class="e47 d"><%= @exam.e47[17]%></td>
+        <td class="e47 v"><%= @exam.e47[18]%></td>
+        <td class="e47 m"><%= @exam.e47[19]%></td>
+        <td class="e46 d"><%= @exam.e46[17]%></td>
+        <td class="e46 v"><%= @exam.e46[18]%></td>
+        <td class="e46 m"><%= @exam.e46[19]%></td>
+        <td class="e45 d"><%= @exam.e45[17]%></td>
+        <td class="e45 v"><%= @exam.e45[18]%></td>
+        <td class="e45 m"><%= @exam.e45[19]%></td>
+        <td class="e44 d"><%= @exam.e44[17]%></td>
+        <td class="e44 v"><%= @exam.e44[18]%></td>
+        <td class="e44 m"><%= @exam.e44[19]%></td>
+        <td class="e43 d"><%= @exam.e43[17]%></td>
+        <td class="e43 v"><%= @exam.e43[18]%></td>
+        <td class="e43 m"><%= @exam.e43[19]%></td>
+        <td class="e42 d"><%= @exam.e42[17]%></td>
+        <td class="e42 v"><%= @exam.e42[18]%></td>
+        <td class="e42 m"><%= @exam.e42[19]%></td>
+        <td class="e41 d"><%= @exam.e41[17]%></td>
+        <td class="e41 v"><%= @exam.e41[18]%></td>
+        <td class="e41 m"><%= @exam.e41[19]%></td>
+        <td class="e31 m"><%= @exam.e31[19]%></td>
+        <td class="e31 v"><%= @exam.e31[18]%></td>
+        <td class="e31 d"><%= @exam.e31[17]%></td>
+        <td class="e32 m"><%= @exam.e32[19]%></td>
+        <td class="e32 v"><%= @exam.e32[18]%></td>
+        <td class="e32 d"><%= @exam.e32[17]%></td>
+        <td class="e33 m"><%= @exam.e33[19]%></td>
+        <td class="e33 v"><%= @exam.e33[18]%></td>
+        <td class="e33 d"><%= @exam.e33[17]%></td>
+        <td class="e34 m"><%= @exam.e34[19]%></td>
+        <td class="e34 v"><%= @exam.e34[18]%></td>
+        <td class="e34 d"><%= @exam.e34[17]%></td>
+        <td class="e35 m"><%= @exam.e35[19]%></td>
+        <td class="e35 v"><%= @exam.e35[18]%></td>
+        <td class="e35 d"><%= @exam.e35[17]%></td>
+        <td class="e36 m"><%= @exam.e36[19]%></td>
+        <td class="e36 v"><%= @exam.e36[18]%></td>
+        <td class="e36 d"><%= @exam.e36[17]%></td>
+        <td class="e37 m"><%= @exam.e37[19]%></td>
+        <td class="e37 v"><%= @exam.e37[18]%></td>
+        <td class="e37 d"><%= @exam.e37[17]%></td>
+        <td class="e38 m"><%= @exam.e38[19]%></td>
+        <td class="e38 v"><%= @exam.e38[18]%></td>
+        <td class="e38 d"><%= @exam.e38[17]%></td>
+    </tr>
+
+    <tr class="forca M">
+        <td class="index">forca M</td>
+        <td colspan="3" class="e48"><%= @exam.e48[20]%></td>
+        <td colspan="3" class="e47"><%= @exam.e47[20]%></td>
+        <td colspan="3" class="e46"><%= @exam.e46[20]%></td>
+        <td colspan="3" class="e45"><%= @exam.e45[20]%></td>
+        <td colspan="3" class="e44"><%= @exam.e44[20]%></td>
+        <td colspan="18"></td>
+        <td colspan="3" class="e34"><%= @exam.e34[20]%></td>
+        <td colspan="3" class="e35"><%= @exam.e35[20]%></td>
+        <td colspan="3" class="e36"><%= @exam.e36[20]%></td>
+        <td colspan="3" class="e37"><%= @exam.e37[20]%></td>
+        <td colspan="3" class="e38"><%= @exam.e38[20]%></td>
+    </tr>
+
+    <tr class="forca D">
+        <td class="index">forca D</td>
+        <td colspan="3" class="e48"><%= @exam.e48[21]%></td>
+        <td colspan="3" class="e47"><%= @exam.e47[21]%></td>
+        <td colspan="3" class="e46"><%= @exam.e46[21]%></td>
+        <td colspan="3" class="e45"><%= @exam.e45[21]%></td>
+        <td colspan="3" class="e44"><%= @exam.e44[21]%></td>
+        <td colspan="18"></td>
+        <td colspan="3" class="e34"><%= @exam.e34[21]%></td>
+        <td colspan="3" class="e35"><%= @exam.e35[21]%></td>
+        <td colspan="3" class="e36"><%= @exam.e36[21]%></td>
+        <td colspan="3" class="e37"><%= @exam.e37[21]%></td>
+        <td colspan="3" class="e38"><%= @exam.e38[21]%></td>
+    </tr>
+
+    <tr class="forca V">
+        <td class="index">forca V</td>
+        <td colspan="3" class="e48"><%= @exam.e48[22]%></td>
+        <td colspan="3" class="e47"><%= @exam.e47[22]%></td>
+        <td colspan="3" class="e46"><%= @exam.e46[22]%></td>
+        <td colspan="30"></td>
+        <td colspan="3" class="e36"><%= @exam.e36[22]%></td>
+        <td colspan="3" class="e37"><%= @exam.e37[22]%></td>
+        <td colspan="3" class="e38"><%= @exam.e38[22]%></td>
+    </tr>
+
+    <tr class="mobilita">
+        <td class="index">mobilità</td>
+        <td colspan="3" class="e48"><%= @exam.e48[23]%></td>
+        <td colspan="3" class="e47"><%= @exam.e47[23]%></td>
+        <td colspan="3" class="e46"><%= @exam.e46[23]%></td>
+        <td colspan="3" class="e45"><%= @exam.e45[22]%></td>
+        <td colspan="3" class="e44"><%= @exam.e44[22]%></td>
+        <td colspan="3" class="e43"><%= @exam.e43[20]%></td>
+        <td colspan="3" class="e42"><%= @exam.e42[20]%></td>
+        <td colspan="3" class="e41"><%= @exam.e41[20]%></td>
+        <td colspan="3" class="e31"><%= @exam.e31[20]%></td>
+        <td colspan="3" class="e32"><%= @exam.e32[20]%></td>
+        <td colspan="3" class="e33"><%= @exam.e33[20]%></td>
+        <td colspan="3" class="e34"><%= @exam.e34[22]%></td>
+        <td colspan="3" class="e35"><%= @exam.e35[22]%></td>
+        <td colspan="3" class="e36"><%= @exam.e36[23]%></td>
+        <td colspan="3" class="e37"><%= @exam.e37[23]%></td>
+        <td colspan="3" class="e38"><%= @exam.e38[23]%></td>
+    </tr>
+
+
+    <tr class="chart">
+      <td class="index">Chart</td>
+      <td colspan="48"><div class="chart">
+        <canvas id="myChartInf" width="400" height="100"></canvas>
+      </div></td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+var ctx = document.getElementById("myChartInf");
+var scatterChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        datasets: [{
+            label: 'Tasca Vestibolare',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e48[2]%>
+            }, {
+                x: -8,
+                y: <%= @exam.e48[3]%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e48[4]%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e47[2]%>
+            }, {
+                x: -7,
+                y: <%= @exam.e47[3]%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e47[4]%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e46[2]%>
+            }, {
+                x: -6,
+                y: <%= @exam.e46[3]%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e46[4]%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e45[2]%>
+            }, {
+                x: -5,
+                y: <%= @exam.e45[3]%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e45[4]%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e44[2]%>
+            }, {
+                x: -4,
+                y: <%= @exam.e44[3]%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e44[4]%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e43[2]%>
+            }, {
+                x: -3,
+                y: <%= @exam.e43[3]%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e43[4]%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e42[2]%>
+            }, {
+                x: -2,
+                y: <%= @exam.e42[3]%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e42[4]%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e41[2]%>
+            }, {
+                x: -1,
+                y: <%= @exam.e41[3]%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e41[4]%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e31[4]%>
+            }, {
+                x: 1,
+                y: <%= @exam.e31[3]%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e31[2]%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e32[4]%>
+            }, {
+                x: 2,
+                y: <%= @exam.e32[3]%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e32[2]%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e33[4]%>
+            }, {
+                x: 3,
+                y: <%= @exam.e33[3]%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e33[2]%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e34[4]%>
+            }, {
+                x: 4,
+                y: <%= @exam.e34[3]%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e34[2]%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e35[4]%>
+            }, {
+                x: 5,
+                y: <%= @exam.e35[3]%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e35[2]%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e36[4]%>
+            }, {
+                x: 6,
+                y: <%= @exam.e36[3]%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e36[2]%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e37[4]%>
+            }, {
+                x: 7,
+                y: <%= @exam.e37[3]%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e37[2]%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e38[4]%>
+            }, {
+                x: 8,
+                y: <%= @exam.e38[3]%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e33[2]%>
+            }],
+            borderColor: ['rgb(181, 33, 79)'],
+            backgroundColor: ['rgba(237, 104, 156, 0.5)']
+        },{
+            label: 'Tasca Linguale',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e48[5]%>
+            }, {
+                x: -8,
+                y: <%= @exam.e48[6]%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e48[7]%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e47[5]%>
+            }, {
+                x: -7,
+                y: <%= @exam.e47[6]%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e47[7]%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e46[5]%>
+            }, {
+                x: -6,
+                y: <%= @exam.e46[6]%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e46[7]%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e45[5]%>
+            }, {
+                x: -5,
+                y: <%= @exam.e45[6]%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e45[7]%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e44[5]%>
+            }, {
+                x: -4,
+                y: <%= @exam.e44[6]%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e44[7]%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e43[5]%>
+            }, {
+                x: -3,
+                y: <%= @exam.e43[6]%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e43[7]%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e42[5]%>
+            }, {
+                x: -2,
+                y: <%= @exam.e42[6]%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e42[7]%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e41[5]%>
+            }, {
+                x: -1,
+                y: <%= @exam.e41[6]%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e41[7]%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e31[7]%>
+            }, {
+                x: 1,
+                y: <%= @exam.e31[6]%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e31[5]%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e32[7]%>
+            }, {
+                x: 2,
+                y: <%= @exam.e32[6]%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e32[5]%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e33[7]%>
+            }, {
+                x: 3,
+                y: <%= @exam.e33[6]%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e33[5]%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e34[7]%>
+            }, {
+                x: 4,
+                y: <%= @exam.e34[6]%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e34[5]%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e35[7]%>
+            }, {
+                x: 5,
+                y: <%= @exam.e35[6]%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e35[5]%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e36[7]%>
+            }, {
+                x: 6,
+                y: <%= @exam.e36[6]%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e36[5]%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e37[7]%>
+            }, {
+                x: 7,
+                y: <%= @exam.e37[6]%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e37[5]%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e38[7]%>
+            }, {
+                x: 8,
+                y: <%= @exam.e38[6]%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e33[5]%>
+            }],
+            borderColor: ['rgb(224, 38, 95)'],
+            backgroundColor: ['rgba(242, 167, 196, 0.5)']
+        },{
+            label: 'Recessione Vestibolare',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e48[8]%>
+            }, {
+                x: -8,
+                y: <%= @exam.e48[9]%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e48[10]%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e47[8]%>
+            }, {
+                x: -7,
+                y: <%= @exam.e47[9]%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e47[10]%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e46[8]%>
+            }, {
+                x: -6,
+                y: <%= @exam.e46[9]%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e46[10]%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e45[8]%>
+            }, {
+                x: -5,
+                y: <%= @exam.e45[9]%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e45[10]%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e44[8]%>
+            }, {
+                x: -4,
+                y: <%= @exam.e44[9]%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e44[10]%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e43[8]%>
+            }, {
+                x: -3,
+                y: <%= @exam.e43[9]%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e43[10]%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e42[8]%>
+            }, {
+                x: -2,
+                y: <%= @exam.e42[9]%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e42[10]%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e41[8]%>
+            }, {
+                x: -1,
+                y: <%= @exam.e41[9]%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e41[10]%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e31[10]%>
+            }, {
+                x: 1,
+                y: <%= @exam.e31[9]%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e31[8]%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e32[10]%>
+            }, {
+                x: 2,
+                y: <%= @exam.e32[9]%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e32[8]%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e33[10]%>
+            }, {
+                x: 3,
+                y: <%= @exam.e33[9]%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e33[8]%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e34[10]%>
+            }, {
+                x: 4,
+                y: <%= @exam.e34[9]%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e34[8]%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e35[10]%>
+            }, {
+                x: 5,
+                y: <%= @exam.e35[9]%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e35[8]%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e36[10]%>
+            }, {
+                x: 6,
+                y: <%= @exam.e36[9]%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e36[8]%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e37[10]%>
+            }, {
+                x: 7,
+                y: <%= @exam.e37[9]%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e37[8]%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e38[10]%>
+            }, {
+                x: 8,
+                y: <%= @exam.e38[9]%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e33[8]%>
+            }],
+            borderColor: ['rgb(92, 102, 238)'],
+            backgroundColor: ['rgba(79, 175, 236, 0.5)']
+        },{
+            label: 'Recessione Linguale',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e48[11]%>
+            }, {
+                x: -8,
+                y: <%= @exam.e48[12]%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e48[13]%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e47[11]%>
+            }, {
+                x: -7,
+                y: <%= @exam.e47[12]%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e47[13]%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e46[11]%>
+            }, {
+                x: -6,
+                y: <%= @exam.e46[12]%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e46[13]%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e45[11]%>
+            }, {
+                x: -5,
+                y: <%= @exam.e45[12]%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e45[13]%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e44[11]%>
+            }, {
+                x: -4,
+                y: <%= @exam.e44[12]%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e44[13]%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e43[11]%>
+            }, {
+                x: -3,
+                y: <%= @exam.e43[12]%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e43[13]%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e42[11]%>
+            }, {
+                x: -2,
+                y: <%= @exam.e42[12]%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e42[13]%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e41[11]%>
+            }, {
+                x: -1,
+                y: <%= @exam.e41[12]%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e41[13]%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e31[13]%>
+            }, {
+                x: 1,
+                y: <%= @exam.e31[12]%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e31[11]%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e32[13]%>
+            }, {
+                x: 2,
+                y: <%= @exam.e32[12]%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e32[11]%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e33[13]%>
+            }, {
+                x: 3,
+                y: <%= @exam.e33[12]%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e33[11]%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e34[13]%>
+            }, {
+                x: 4,
+                y: <%= @exam.e34[12]%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e34[11]%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e35[13]%>
+            }, {
+                x: 5,
+                y: <%= @exam.e35[12]%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e35[11]%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e36[13]%>
+            }, {
+                x: 6,
+                y: <%= @exam.e36[12]%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e36[11]%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e37[13]%>
+            }, {
+                x: 7,
+                y: <%= @exam.e37[12]%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e37[11]%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e38[13]%>
+            }, {
+                x: 8,
+                y: <%= @exam.e38[12]%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e33[11]%>
+            }],
+            borderColor: ['rgb(125, 133, 236)'],
+            backgroundColor: ['rgba(111, 186, 233, 0.5)']
+        },{
+            label: 'Perdita d"attacco Vestibolare',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e48[14]%>
+            }, {
+                x: -8,
+                y: <%= @exam.e48[15]%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e48[16]%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e47[14]%>
+            }, {
+                x: -7,
+                y: <%= @exam.e47[15]%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e47[16]%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e46[14]%>
+            }, {
+                x: -6,
+                y: <%= @exam.e46[15]%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e46[16]%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e45[14]%>
+            }, {
+                x: -5,
+                y: <%= @exam.e45[15]%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e45[16]%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e44[14]%>
+            }, {
+                x: -4,
+                y: <%= @exam.e44[15]%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e44[16]%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e43[14]%>
+            }, {
+                x: -3,
+                y: <%= @exam.e43[15]%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e43[16]%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e42[14]%>
+            }, {
+                x: -2,
+                y: <%= @exam.e42[15]%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e42[16]%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e41[14]%>
+            }, {
+                x: -1,
+                y: <%= @exam.e41[15]%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e41[16]%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e31[16]%>
+            }, {
+                x: 1,
+                y: <%= @exam.e31[15]%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e31[14]%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e32[16]%>
+            }, {
+                x: 2,
+                y: <%= @exam.e32[15]%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e32[14]%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e33[16]%>
+            }, {
+                x: 3,
+                y: <%= @exam.e33[15]%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e33[14]%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e34[16]%>
+            }, {
+                x: 4,
+                y: <%= @exam.e34[15]%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e34[14]%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e35[16]%>
+            }, {
+                x: 5,
+                y: <%= @exam.e35[15]%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e35[14]%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e36[16]%>
+            }, {
+                x: 6,
+                y: <%= @exam.e36[15]%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e36[14]%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e37[16]%>
+            }, {
+                x: 7,
+                y: <%= @exam.e37[15]%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e37[14]%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e38[16]%>
+            }, {
+                x: 8,
+                y: <%= @exam.e38[15]%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e33[14]%>
+            }],
+            borderColor: ['rgb(104, 230, 84)'],
+            backgroundColor: ['rgba(104, 233, 83, 0.5)']
+        },{
+            label: 'Perdita d"attacco Linguale',
+            data: [{
+                x: -8.3,
+                y: <%= @exam.e48[17]%>
+            }, {
+                x: -8,
+                y: <%= @exam.e48[18]%>
+            }, {
+                x: -7.7,
+                y: <%= @exam.e48[19]%>
+            },{
+                x: -7.3,
+                y: <%= @exam.e47[17]%>
+            }, {
+                x: -7,
+                y: <%= @exam.e47[18]%>
+            }, {
+                x: -6.7,
+                y: <%= @exam.e47[19]%>
+            },{
+                x: -6.3,
+                y: <%= @exam.e46[17]%>
+            }, {
+                x: -6,
+                y: <%= @exam.e46[18]%>
+            }, {
+                x: -5.7,
+                y: <%= @exam.e46[19]%>
+            },{
+                x: -5.3,
+                y: <%= @exam.e45[17]%>
+            }, {
+                x: -5,
+                y: <%= @exam.e45[18]%>
+            }, {
+                x: -4.7,
+                y: <%= @exam.e45[19]%>
+            },{
+                x: -4.3,
+                y: <%= @exam.e44[17]%>
+            }, {
+                x: -4,
+                y: <%= @exam.e44[18]%>
+            }, {
+                x: -3.7,
+                y: <%= @exam.e44[19]%>
+            },{
+                x: -3.3,
+                y: <%= @exam.e43[17]%>
+            }, {
+                x: -3,
+                y: <%= @exam.e43[18]%>
+            }, {
+                x: -2.7,
+                y: <%= @exam.e43[19]%>
+            },{
+                x: -2.3,
+                y: <%= @exam.e42[17]%>
+            }, {
+                x: -2,
+                y: <%= @exam.e42[18]%>
+            }, {
+                x: -1.7,
+                y: <%= @exam.e42[19]%>
+            },{
+                x: -1.3,
+                y: <%= @exam.e41[17]%>
+            }, {
+                x: -1,
+                y: <%= @exam.e41[18]%>
+            }, {
+                x: -0.7,
+                y: <%= @exam.e41[19]%>
+            },{
+                x: 0.7,
+                y: <%= @exam.e31[19]%>
+            }, {
+                x: 1,
+                y: <%= @exam.e31[18]%>
+            }, {
+                x: 1.3,
+                y: <%= @exam.e31[17]%>
+            },{
+                x: 1.7,
+                y: <%= @exam.e32[19]%>
+            }, {
+                x: 2,
+                y: <%= @exam.e32[18]%>
+            }, {
+                x: 2.3,
+                y: <%= @exam.e32[17]%>
+            },{
+                x: 2.7,
+                y: <%= @exam.e33[19]%>
+            }, {
+                x: 3,
+                y: <%= @exam.e33[18]%>
+            }, {
+                x: 3.3,
+                y: <%= @exam.e33[17]%>
+            },{
+                x: 3.7,
+                y: <%= @exam.e34[19]%>
+            }, {
+                x: 4,
+                y: <%= @exam.e34[18]%>
+            }, {
+                x: 4.3,
+                y: <%= @exam.e34[17]%>
+            },{
+                x: 4.7,
+                y: <%= @exam.e35[19]%>
+            }, {
+                x: 5,
+                y: <%= @exam.e35[18]%>
+            }, {
+                x: 5.3,
+                y: <%= @exam.e35[17]%>
+            },{
+                x: 5.7,
+                y: <%= @exam.e36[19]%>
+            }, {
+                x: 6,
+                y: <%= @exam.e36[18]%>
+            }, {
+                x: 6.3,
+                y: <%= @exam.e36[17]%>
+            },{
+                x: 6.7,
+                y: <%= @exam.e37[19]%>
+            }, {
+                x: 7,
+                y: <%= @exam.e37[18]%>
+            }, {
+                x: 7.3,
+                y: <%= @exam.e37[17]%>
+            },{
+                x: 7.7,
+                y: <%= @exam.e38[19]%>
+            }, {
+                x: 8,
+                y: <%= @exam.e38[18]%>
+            }, {
+                x: 8.3,
+                y: <%= @exam.e33[17]%>
+            }],
+            borderColor: ['rgb(126, 205, 114)'],
+            backgroundColor: ['rgba(152, 235, 138, 0.5)']
+        }
+      ]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                type: 'linear',
+                position: 'bottom',
+                ticks: {
+                    max: 8.5,
+                    min: -8.5,
+                    stepSize: 1
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    stepSize: 1
+                }
+            }]
+        }
+    }
+});
+</script>

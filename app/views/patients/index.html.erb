@@ -1,0 +1,20 @@
+<div class="content">
+  <h1>Patients</h1>
+  <table class="table">
+    <tr>
+      <th>Nome e Cognome</th>
+      <th>Età</th>
+      <th>Ultima visita</th>
+    </tr>
+
+    <% @patients.each do |p| %>
+    <tr>
+      <td><%= link_to (p.name + ' ' + p.last_name), patient_path(p) %></td>
+      <td><%= p.birth_date%></td>
+      <td><%= p.last_hygiene%></td>
+    </tr>
+    <% end %>
+
+  </table>
+
+</div>

@@ -1,0 +1,8 @@
+<div class="content">
+  <h1 class="text-center">La Cartella Parodontale</h1>
+  <%= form_tag(patients_path, :method => 'get', id: 'search-form') do %>
+    <%= text_field_tag :search, params[:search], placeholder: 'Cerca tra i tuoi pazienti' %>
+    <%= submit_tag 'Cerca', :name => nil %>
+  <% end %>
+
+</div>
