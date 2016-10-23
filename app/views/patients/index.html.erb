@@ -1,5 +1,6 @@
 <div class="content">
-  <h1>Patients</h1>
+  <h1>Pazienti</h1>
+  <% if @patients.present? %>
   <table class="table">
     <tr>
       <th>Nome e Cognome</th>
@@ -16,5 +17,8 @@
     <% end %>
 
   </table>
+  <% else %>
+    <p>Non ci sono pazienti con questo nome o cognome nel tuo archivio</p>
+  <% end %>
 
 </div>

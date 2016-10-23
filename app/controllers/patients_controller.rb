@@ -1,9 +1,13 @@
 class PatientsController < ApplicationController
   def index
-    if params[:search]
-      @patients = Patient.search(params[:search]).order('last_name ASC')
+    if user_signed_in?
+      if params[:search]
+        # @patients = Patient.search(params[:search]).where(:users => current_user).order('last_name ASC')
+        @patients = current_user.patients.search(params[:search]).order('last_name ASC')
+      end
     else
-      @patients = Patient.all.order('last_name ASC')
+      flash[:alert] = 'Devi essere registrato e accedere al tuo profilo per poter cercare i pazienti'
+      redirect_to(:controller => 'home', :action => 'index')
     end
   end
 

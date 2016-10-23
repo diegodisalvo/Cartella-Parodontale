@@ -17,3 +17,9 @@
 //= require bootstrap-sprockets
 //= require chart
 //= require_tree .
+
+$(document).ready(function(){
+  $('.messages').click(function(){
+    $(this).hide(300);
+  });
+})

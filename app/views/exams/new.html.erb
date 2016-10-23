@@ -1,9 +1,9 @@
-<h1>New exam</h1>
-
+<h1 class="text-center">Nuovo esame per <%= @patient.name + ' ' + @patient.last_name%></h1>
 <%= form_for(:exam, :url => {:action => 'create'},
                     :html => {:multipart => true}) do |f| %>
-                    <h2>Arcata superiore</h2>
-                    <table>
+<%= hidden_field_tag 'patient_id', @patient.id %>
+                    <h2 class="text-center">Arcata superiore</h2>
+                    <table class="exam">
                       <thead>
                         <tr class="indice">
                             <td colspan="1" rowspan="3" class="indice">indice</td>
@@ -827,8 +827,8 @@
 
 
 
-                    <h2>Arcata inferiore</h2>
-                    <table>
+                    <h2 class="text-center">Arcata inferiore</h2>
+                    <table class="exam">
                       <thead>
                         <tr class="indice">
                             <td colspan="1" rowspan="3" class="indice">indice</td>

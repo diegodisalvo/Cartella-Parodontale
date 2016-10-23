@@ -1,6 +1,6 @@
 <div class="content">
-  <h1><%= @patient.name + ' ' + @patient.last_name%></h1>
-  <table class="table">
+    <h1><%= @patient.name + ' ' + @patient.last_name%></h1>
+  <table class="table patient">
     <tr>
       <th>Data di nascita</th>
       <td><%= @patient.birth_date%></td>
@@ -36,7 +36,10 @@
 
   </table>
 
+  <button class="btn btn-info"><%= link_to 'modifica dati paziente', edit_patient_path(@patient)%></button>
+
   <h2>Esami precedenti</h2>
+  <% if @patient.exams.present? %>
   <table class="table table-striped">
     <tr>
       <th>Data esame</th>
@@ -49,8 +52,12 @@
         <td><%= e.exam_type %></td>
         <td><%= e.notes %></td>
       </tr>
-
     <% end %>
   </table>
+  <%= link_to 'Nuovo esame', new_exam_path(:patient_id => @patient)%>
+  <% else %>
+    <h5>Questo paziente non ha esami registrati a suo nome</h5>
+    <%= link_to 'Nuovo esame', new_exam_path(:patient_id => @patient)%>
+  <% end %>
 
 </div>

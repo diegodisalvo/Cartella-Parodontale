@@ -8,14 +8,17 @@ class ExamsController < ApplicationController
   end
 
   def new
+    @patient = Patient.find(params[:patient_id])
     @exam = Exam.new
   end
 
   def create
+    @patient = Patient.find(params[:patient_id])
     @exam = Exam.new(exam_params)
+    @patient.exams << @exam
     if @exam.save
       flash[:notice] = "Exam created"
-      redirect_to exams_path
+      redirect_to patient_path(@patient)
     end
 
   end

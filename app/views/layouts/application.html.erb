@@ -20,6 +20,26 @@
       </button>
       <%= link_to 'Cartella Parodontale', root_path, :class => 'navbar-brand' %>
     </div>
+    <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.email %> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <% if current_user.present? %>
+            <li><%= link_to 'Profilo'%></li>
+          <% else %>
+            <li><a>Role: not yet assigned</a></li>
+          <% end %>
+
+          <li role="separator" class="divider"></li>
+          <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
+
+        </ul>
+        <% else %>
+        <li><%= link_to 'Accedi', new_user_session_path()%></li>
+      </li>
+      <% end %>
+    </ul>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -30,7 +50,29 @@
 </nav>
 <body>
 
+
+<div class="messages">
+  <% if notice.present? %>
+    <div class="notice">
+      <p><%= notice %></p>
+      <p class="small-text"> Clicca per nascondere</p>
+    </div>
+  <% end %>
+
+  <% if alert.present? %>
+    <div class="alert">
+      <p><%= alert %></p>
+      <p class="small-text"> Clicca per nascondere</p>
+    </div>
+  <% end %>
+</div>
+
 <%= yield %>
 
 </body>
+
+<footer>
+  <h3>La Cartella Parodontale</h3>
+  <p>Un progetto realizzato da Giulio, Magda e Diego</p>
+</footer>
 </html>
