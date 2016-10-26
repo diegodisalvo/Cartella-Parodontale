@@ -1,10 +1,8 @@
 <div class="content">
   <h1>Exams#index</h1>
 
-  <% if @exam.present? %>
   <% @exams.each do |e| %>
-    <%= link_to e.id, exam_path(e) %>
-  <% end %>
+    <%= link_to e.created_at, exam_path(e) %><br />
   <% end %>
 
 </div>

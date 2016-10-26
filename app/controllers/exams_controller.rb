@@ -5,6 +5,11 @@ class ExamsController < ApplicationController
 
   def show
     @exam = Exam.find(params[:id])
+    @exam_csv = Exam.where(:id => [params[:id]])
+    respond_to do |format|
+      format.html
+      format.csv { render text: @exam_csv.to_csv }
+    end
   end
 
   def new
