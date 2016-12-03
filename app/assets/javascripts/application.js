@@ -18,7 +18,7 @@
 //= require chart
 //= require_tree .
 
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(){
 
   $('.messages').click(function(){
     $(this).hide(300);
