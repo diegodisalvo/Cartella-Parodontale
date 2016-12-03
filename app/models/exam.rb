@@ -1,8 +1,8 @@
 class Exam < ActiveRecord::Base
   belongs_to :patient
 
-  def self.to_csv
-    CSV.generate do |csv|
+  def self.to_csv(options = {})
+    CSV.generate(options) do |csv|
       csv << ['id','dente', 'sito', 'tasca', 'recessione', 'BOP', 'placca', 'essudato', 'mobilità', 'forca', 'familiarità', 'allergia', 'stress', 'fumo']
       all.each do |e|
         if e.e18[0] == 0

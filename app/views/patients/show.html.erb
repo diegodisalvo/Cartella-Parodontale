@@ -33,31 +33,27 @@
       <th>Farmaci</th>
       <td><%= @patient.drugs%></td>
     </tr>
-
   </table>
-
-  <button class="btn btn-info"><%= link_to 'modifica dati paziente', edit_patient_path(@patient)%></button>
-
+  <button class="btn btn-info center-block"><%= link_to 'modifica dati paziente', edit_patient_path(@patient)%></button>
+<hr />
   <h2>Esami precedenti</h2>
   <% if @patient.exams.present? %>
   <table class="table table-striped">
     <tr>
-      <th>Data esame</th>
-      <th>Tipo</th>
-      <th>Note</th>
+      <th class="exams-date">Data esame</th>
+      <th class="exams-type">Tipo</th>
+      <th class="exams-notes">Note</th>
     </tr>
-    <% @patient.exams.each do |e| %>
+    <% @exams.each do |e| %>
       <tr>
-        <td><%= link_to e.created_at, exam_path(e) %></td>
+        <td><%= link_to e.created_at.to_date, exam_path(e) %></td>
         <td><%= e.exam_type %></td>
         <td><%= e.notes %></td>
       </tr>
     <% end %>
   </table>
-  <%= link_to 'Nuovo esame', new_exam_path(:patient_id => @patient)%>
   <% else %>
     <h5>Questo paziente non ha esami registrati a suo nome</h5>
-    <%= link_to 'Nuovo esame', new_exam_path(:patient_id => @patient)%>
   <% end %>
-
+  <button class="btn btn-info center-block"><%= link_to 'Nuovo esame', new_exam_path(:patient_id => @patient)%></button>
 </div>

@@ -2,43 +2,68 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.exam
+
+//NEW View
+.e18, .e16, .e14, .e12, .e21, .e23, .e25, .e27, .e48, .e46, .e44, .e42, .e31, .e33, .e35, .e37
+  background-color: rgb(240, 240, 240)
+
+.annotations
+  margin: auto
   text-align: center
-  border-collapse: collapse
-  margin: 0 auto 0 auto
-  width: 1100px
+  max-width: 700px
 
-.exam table, .exam th, .exam td
-  border: 1px solid grey
-
-.exam tr
+.superior, .inferior
   font-size: 0.8em
-
-.tasca, .recessione, .PA, .sang, .placca, .pus
-  padding: 0
-  margin: 0
-  .exam td
-    margin: 0
+  .over-index
+    height: 50px
+  .index
+    width: 80px
+  .btn
     padding: 0
-
-.exam td
-  padding: 0.3em
-
-.exam input
-  font-size: 0.9em
-  font-family: "Avenir"
-  padding: 0
-  margin: 0
-  &[type="number"]
-    width: 18px
+    height: 24px
+    width: 20px
+  .btn p
+    padding: 0.1em 0 0 0
+  .sanguinamento, .placca, .pus
+    .btn-info
+      background-color: rgba(255, 255, 255, 0.4) !important
+      color: black
+  .index, .e18, .e17, .e16, .e15, .e14, .e13, .e12, .e11, .e21, .e22, .e23, .e24, .e25, .e26, .e27, .e28, .e48, .e47, .e46, .e45, .e44, .e43, .e42, .e41, .e31, .e32, .e33, .e34, .e35, .e36, .e37, .e38
+    display: inline-block
     text-align: center
-  &[type="checkbox"]:checked
-    background: red
-    color: red
-    border: red
+    padding: 0 0.1em 0 0.1em
+  ul
+    list-style: none
+    padding: 1em 0 0 0
+  li
+    height: 30px
+    .empty
+      visibility: hidden
+  input
+    text-align: center
+    width: 18px
+    .hidden
+      display: none
+.inline
+  li
+    display: inline-block
+input
+  &[type=submit]
+    background-color: transparent
+    border: none
 
-.indice, .index
-  width: 200px
 
-.e18, .e16, .e14, .e12, .e21, .e23, .e25, .e27
-  background-color: rgb(230, 230, 230)
+//SHOW view
+table.exam
+  margin: 1em
+  width: 97%
+  text-align: center
+  font-size: 0.9em
+  td, tr
+    padding: 0.1em
+    border: 1px solid rgb(199, 199, 199)
+
+.notes
+  max-width: 700px
+  margin: auto
+  padding: 1em 0 1em 0

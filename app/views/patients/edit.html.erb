@@ -1,2 +1,9 @@
-<h1>Patients#edit</h1>
-<p>Find me in app/views/patients/edit.html.erb</p>
+<div class="content">
+<h1><%= @patient.name + ' ' + @patient.last_name%></h1>
+
+  <%= semantic_form_for @patient do |f| %>
+    <%= f.inputs %>
+    <%= f.actions %>
+  <% end %>
+
+</div>

@@ -4,6 +4,8 @@ class PatientsController < ApplicationController
       if params[:search]
         # @patients = Patient.search(params[:search]).where(:users => current_user).order('last_name ASC')
         @patients = current_user.patients.search(params[:search]).order('last_name ASC')
+      else
+        @patients = Patient.all.order('last_name ASC')
       end
     else
       flash[:alert] = 'Devi essere registrato e accedere al tuo profilo per poter cercare i pazienti'
@@ -13,6 +15,7 @@ class PatientsController < ApplicationController
 
   def show
     @patient = Patient.find(params[:id])
+    @exams = @patient.exams.order('created_at ASC')
   end
 
   def new
@@ -28,6 +31,15 @@ class PatientsController < ApplicationController
   end
 
   def edit
+    @patient = Patient.find(params[:id])
+  end
+
+  def update
+    @patient = Patient.find(params[:id])
+    if @patient.update_attributes(patient_params)
+      flash[:notice] = "Dati paziente aggiornati"
+      redirect_to patient_path(@patient)
+    end
   end
 
   private

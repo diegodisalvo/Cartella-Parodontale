@@ -1,0 +1,1733 @@
+<h1 class="text-center">Nuovo esame per <%= @patient.name + ' ' + @patient.last_name%></h1>
+<%= form_for(:exam, :url => {:action => 'create'},
+                    :html => {:multipart => true}) do |f| %>
+<%= hidden_field_tag 'patient_id', @patient.id %>
+                    <h2 class="text-center">Arcata superiore</h2>
+                    <table class="exam">
+                      <thead>
+                        <tr class="indice">
+                            <td colspan="1" rowspan="3" class="indice">indice</td>
+                            <td colspan="3" class="e18" data-site=".e18">18</td>
+                            <td colspan="3" class="e17" data-site=".e17">17</td>
+                            <td colspan="3" class="e16" data-site=".e16">16</td>
+                            <td colspan="3" class="e15" data-site=".e15">15</td>
+                            <td colspan="3" class="e14" data-site=".e14">14</td>
+                            <td colspan="3" class="e13" data-site=".e13">13</td>
+                            <td colspan="3" class="e12"data-site=".e12">12</td>
+                            <td colspan="3" class="e11" data-site=".e11">11</td>
+                            <td colspan="3" class="e21" data-site=".e21">21</td>
+                            <td colspan="3" class="e22" data-site=".e22">22</td>
+                            <td colspan="3" class="e23"  data-site=".e23">23</td>
+                            <td colspan="3" class="e24"  data-site=".e24">24</td>
+                            <td colspan="3" class="e25"  data-site=".e25">25</td>
+                            <td colspan="3" class="e26"  data-site=".e26">26</td>
+                            <td colspan="3" class="e27"  data-site=".e27">27</td>
+                            <td colspan="3" class="e28"  data-site=".e28">28</td>
+                        </tr>
+                        <tr>
+                            <td class="e18">D</td>
+                            <td class="e18">V</td>
+                            <td class="e18">M</td>
+
+                            <td class="e17">D</td>
+                            <td class="e17">V</td>
+                            <td class="e17">M</td>
+
+                            <td class="e16">D</td>
+                            <td class="e16">V</td>
+                            <td class="e16">M</td>
+
+                            <td class="e15">D</td>
+                            <td class="e15">V</td>
+                            <td class="e15">M</td>
+
+                            <td class="e14">D</td>
+                            <td class="e14">V</td>
+                            <td class="e14">M</td>
+
+                            <td class="e13">D</td>
+                            <td class="e13">V</td>
+                            <td class="e13">M</td>
+
+                            <td class="e12">D</td>
+                            <td class="e12">V</td>
+                            <td class="e12">M</td>
+
+                            <td class="e11">D</td>
+                            <td class="e11">V</td>
+                            <td class="e11">M</td>
+
+                            <td class="e21">M</td>
+                            <td class="e21">V</td>
+                            <td class="e21">D</td>
+
+                            <td class="e22">M</td>
+                            <td class="e22">V</td>
+                            <td class="e22">D</td>
+
+                            <td class="e23">M</td>
+                            <td class="e23">V</td>
+                            <td class="e23">D</td>
+
+                            <td class="e24">M</td>
+                            <td class="e24">V</td>
+                            <td class="e24">D</td>
+
+                            <td class="e25">M</td>
+                            <td class="e25">V</td>
+                            <td class="e25">D</td>
+
+                            <td class="e26">M</td>
+                            <td class="e26">V</td>
+                            <td class="e26">D</td>
+
+                            <td class="e27">M</td>
+                            <td class="e27">V</td>
+                            <td class="e27">D</td>
+
+                            <td class="e28">M</td>
+                            <td class="e28">V</td>
+                            <td class="e28">D</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="favourite">
+                          <td class="index">favourite</td>
+                          <td colspan="3" class="e18"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="18"><p>no</p></button></td>
+                          <td colspan="3" class="e17"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="17"><p>no</p></td>
+                          <td colspan="3" class="e16"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="16"><p>no</p></td>
+                          <td colspan="3" class="e15"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="15"><p>no</p></td>
+                          <td colspan="3" class="e14"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="14"><p>no</p></td>
+                          <td colspan="3" class="e13"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="13"><p>no</p></td>
+                          <td colspan="3" class="e12"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="12"><p>no</p></td>
+                          <td colspan="3" class="e11"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="11"><p>no</p></td>
+                          <td colspan="3" class="e21"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="21"><p>no</p></td>
+                          <td colspan="3" class="e22"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="22"><p>no</p></td>
+                          <td colspan="3" class="e23"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="23"><p>no</p></td>
+                          <td colspan="3" class="e24"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="24"><p>no</p></td>
+                          <td colspan="3" class="e25"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="25"><p>no</p></td>
+                          <td colspan="3" class="e26"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="26"><p>no</p></td>
+                          <td colspan="3" class="e27"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="27"><p>no</p></td>
+                          <td colspan="3" class="e28"><div class="btn btn-info action" data-type="favourite" data-value="1" data-element="28"><p>no</p></td>
+
+                      </tr>
+                        <tr class="assenza">
+                            <td class="index">elemento assente</td>
+                            <td colspan="3" class="e18"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="18"><p>no</p></div><input type="number" name="exam[e18][]" class="assenza" data-element=".e18" value="0" id="assenza-18"/></td>
+                            <td colspan="3" class="e17"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="17"><p>no</p></div><input type="number" name="exam[e17][]" class="assenza" data-element=".e17" value="0" id="assenza-17"/></td>
+                            <td colspan="3" class="e16"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="16"><p>no</p></div><input type="number" name="exam[e16][]" class="assenza" data-element=".e16" value="0" id="assenza-16"/></td>
+                            <td colspan="3" class="e15"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="15"><p>no</p></div><input type="number" name="exam[e15][]" class="assenza" data-element=".e15" value="0" id="assenza-15"/></td>
+                            <td colspan="3" class="e14"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="14"><p>no</p></div><input type="number" name="exam[e14][]" class="assenza" data-element=".e14" value="0" id="assenza-14"/></td>
+                            <td colspan="3" class="e13"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="13"><p>no</p></div><input type="number" name="exam[e13][]" class="assenza" data-element=".e13" value="0" id="assenza-13"/></td>
+                            <td colspan="3" class="e12"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="12"><p>no</p></div><input type="number" name="exam[e12][]" class="assenza" data-element=".e12" value="0" id="assenza-12"/></td>
+                            <td colspan="3" class="e11"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="11"><p>no</p></div><input type="number" name="exam[e11][]" class="assenza" data-element=".e11" value="0" id="assenza-11"/></td>
+                            <td colspan="3" class="e21"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="21"><p>no</p></div><input type="number" name="exam[e21][]" class="assenza" data-element=".e21" value="0" id="assenza-21"/></td>
+                            <td colspan="3" class="e22"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="22"><p>no</p></div><input type="number" name="exam[e22][]" class="assenza" data-element=".e22" value="0" id="assenza-22"/></td>
+                            <td colspan="3" class="e23"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="23"><p>no</p></div><input type="number" name="exam[e23][]" class="assenza" data-element=".e23" value="0" id="assenza-23"/></td>
+                            <td colspan="3" class="e24"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="24"><p>no</p></div><input type="number" name="exam[e24][]" class="assenza" data-element=".e24" value="0" id="assenza-24"/></td>
+                            <td colspan="3" class="e25"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="25"><p>no</p></div><input type="number" name="exam[e25][]" class="assenza" data-element=".e25" value="0" id="assenza-25"/></td>
+                            <td colspan="3" class="e26"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="26"><p>no</p></div><input type="number" name="exam[e26][]" class="assenza" data-element=".e26" value="0" id="assenza-26"/></td>
+                            <td colspan="3" class="e27"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="27"><p>no</p></div><input type="number" name="exam[e27][]" class="assenza" data-element=".e27" value="0" id="assenza-27"/></td>
+                            <td colspan="3" class="e28"><div class="btn btn-info action" data-type="assenza" data-value="1" data-element="28"><p>no</p></div><input type="number" name="exam[e28][]" class="assenza" data-element=".e28" value="0" id="assenza-28"/></td>
+                        </tr>
+
+                        <tr class="impianto">
+                            <td class="index">impianto</td>
+                            <td colspan="3" class="e18"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="18">no</div><input type="number" name="exam[e18][]" class="impianto" data-element=".e18" value="0" id="impianto-18"/></td>
+                            <td colspan="3" class="e17"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="17">no</div><input type="number" name="exam[e17][]" class="impianto" data-element=".e17" value="0" id="impianto-17"/></td>
+                            <td colspan="3" class="e16"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="16">no</div><input type="number" name="exam[e16][]" class="impianto" data-element=".e16" value="0" id="impianto-16"/></td>
+                            <td colspan="3" class="e15"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="15">no</div><input type="number" name="exam[e15][]" class="impianto" data-element=".e15" value="0" id="impianto-15"/></td>
+                            <td colspan="3" class="e14"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="14">no</div><input type="number" name="exam[e14][]" class="impianto" data-element=".e14" value="0" id="impianto-14"/></td>
+                            <td colspan="3" class="e13"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="13">no</div><input type="number" name="exam[e13][]" class="impianto" data-element=".e13" value="0" id="impianto-13"/></td>
+                            <td colspan="3" class="e12"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="12">no</div><input type="number" name="exam[e12][]" class="impianto" data-element=".e12" value="0" id="impianto-12"/></td>
+                            <td colspan="3" class="e11"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="11">no</div><input type="number" name="exam[e11][]" class="impianto" data-element=".e11" value="0" id="impianto-11"/></td>
+                            <td colspan="3" class="e21"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="21">no</div><input type="number" name="exam[e21][]" class="impianto" data-element=".e21" value="0" id="impianto-21"/></td>
+                            <td colspan="3" class="e22"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="22">no</div><input type="number" name="exam[e22][]" class="impianto" data-element=".e22" value="0" id="impianto-22"/></td>
+                            <td colspan="3" class="e23"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="23">no</div><input type="number" name="exam[e23][]" class="impianto" data-element=".e23" value="0" id="impianto-23"/></td>
+                            <td colspan="3" class="e24"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="24">no</div><input type="number" name="exam[e24][]" class="impianto" data-element=".e24" value="0" id="impianto-24"/></td>
+                            <td colspan="3" class="e25"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="25">no</div><input type="number" name="exam[e25][]" class="impianto" data-element=".e25" value="0" id="impianto-25"/></td>
+                            <td colspan="3" class="e26"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="26">no</div><input type="number" name="exam[e26][]" class="impianto" data-element=".e26" value="0" id="impianto-26"/></td>
+                            <td colspan="3" class="e27"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="27">no</div><input type="number" name="exam[e27][]" class="impianto" data-element=".e27" value="0" id="impianto-27"/></td>
+                            <td colspan="3" class="e28"><div class="btn btn-info action" data-type="impianto" data-value="1" data-element="28">no</div><input type="number" name="exam[e28][]" class="impianto" data-element=".e28" value="0" id="impianto-28"/></td>
+                        </tr>
+                        <tr class="tasca V">
+                            <td class="index">tasca V</td>
+                            <td class="e18 d"><input type="number" name="exam[e18][]" value="3" /></td>
+                            <td class="e18 v"><input type="number" name="exam[e18][]" value="3" /></td>
+                            <td class="e18 m"><input type="number" name="exam[e18][]" value="3" /></td>
+                            <td class="e17 d"><input type="number" name="exam[e17][]" value="3" /></td>
+                            <td class="e17 v"><input type="number" name="exam[e17][]" value="3" /></td>
+                            <td class="e17 m"><input type="number" name="exam[e17][]" value="3" /></td>
+                            <td class="e16 d"><input type="number" name="exam[e16][]" value="3" /></td>
+                            <td class="e16 v"><input type="number" name="exam[e16][]" value="3" /></td>
+                            <td class="e16 m"><input type="number" name="exam[e16][]" value="3" /></td>
+                            <td class="e15 d"><input type="number" name="exam[e15][]" value="3" /></td>
+                            <td class="e15 v"><input type="number" name="exam[e15][]" value="3" /></td>
+                            <td class="e15 m"><input type="number" name="exam[e15][]" value="3" /></td>
+                            <td class="e14 d"><input type="number" name="exam[e14][]" value="3" /></td>
+                            <td class="e14 v"><input type="number" name="exam[e14][]" value="3" /></td>
+                            <td class="e14 m"><input type="number" name="exam[e14][]" value="3" /></td>
+                            <td class="e13 d"><input type="number" name="exam[e13][]" value="3" /></td>
+                            <td class="e13 v"><input type="number" name="exam[e13][]" value="3" /></td>
+                            <td class="e13 m"><input type="number" name="exam[e13][]" value="3" /></td>
+                            <td class="e12 d"><input type="number" name="exam[e12][]" value="3" /></td>
+                            <td class="e12 v"><input type="number" name="exam[e12][]" value="3" /></td>
+                            <td class="e12 m"><input type="number" name="exam[e12][]" value="3" /></td>
+                            <td class="e11 d"><input type="number" name="exam[e11][]" value="3" /></td>
+                            <td class="e11 v"><input type="number" name="exam[e11][]" value="3" /></td>
+                            <td class="e11 m"><input type="number" name="exam[e11][]" value="3" /></td>
+                            <td class="e21 m"><input type="number" name="exam[e21][]" value="3" /></td>
+                            <td class="e21 v"><input type="number" name="exam[e21][]" value="3" /></td>
+                            <td class="e21 d"><input type="number" name="exam[e21][]" value="3" /></td>
+                            <td class="e22 m"><input type="number" name="exam[e22][]" value="3" /></td>
+                            <td class="e22 v"><input type="number" name="exam[e22][]" value="3" /></td>
+                            <td class="e22 d"><input type="number" name="exam[e22][]" value="3" /></td>
+                            <td class="e23 m"><input type="number" name="exam[e23][]" value="3" /></td>
+                            <td class="e23 v"><input type="number" name="exam[e23][]" value="3" /></td>
+                            <td class="e23 d"><input type="number" name="exam[e23][]" value="3" /></td>
+                            <td class="e24 m"><input type="number" name="exam[e24][]" value="3" /></td>
+                            <td class="e24 v"><input type="number" name="exam[e24][]" value="3" /></td>
+                            <td class="e24 d"><input type="number" name="exam[e24][]" value="3" /></td>
+                            <td class="e25 m"><input type="number" name="exam[e25][]" value="3" /></td>
+                            <td class="e25 v"><input type="number" name="exam[e25][]" value="3" /></td>
+                            <td class="e25 d"><input type="number" name="exam[e25][]" value="3" /></td>
+                            <td class="e26 m"><input type="number" name="exam[e26][]" value="3" /></td>
+                            <td class="e26 v"><input type="number" name="exam[e26][]" value="3" /></td>
+                            <td class="e26 d"><input type="number" name="exam[e26][]" value="3" /></td>
+                            <td class="e27 m"><input type="number" name="exam[e27][]" value="3" /></td>
+                            <td class="e27 v"><input type="number" name="exam[e27][]" value="3" /></td>
+                            <td class="e27 d"><input type="number" name="exam[e27][]" value="3" /></td>
+                            <td class="e28 m"><input type="number" name="exam[e28][]" value="3" /></td>
+                            <td class="e28 v"><input type="number" name="exam[e28][]" value="3" /></td>
+                            <td class="e28 d"><input type="number" name="exam[e28][]" value="3" /></td>
+                        </tr>
+
+                        <tr class="sang">
+                            <td class="index">Sanguinamento V</td>
+                            <td class="e18"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="18-D">no</div></td>
+                            <td class="e18"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="18-V">no</div></td>
+                            <td class="e18"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="18-M">no</div></td>
+                            <td class="e17"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="17-D">no</div></td>
+                            <td class="e17"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="17-V">no</div></td>
+                            <td class="e17"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="17-M">no</div></td>
+                            <td class="e16"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="16-D">no</div></td>
+                            <td class="e16"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="16-V">no</div></td>
+                            <td class="e16"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="16-M">no</div></td>
+                            <td class="e15"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="15-D">no</div></td>
+                            <td class="e15"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="15-V">no</div></td>
+                            <td class="e15"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="15-M">no</div></td>
+                            <td class="e14"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="14-D">no</div></td>
+                            <td class="e14"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="14-V">no</div></td>
+                            <td class="e14"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="14-M">no</div></td>
+                            <td class="e13"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="13-D">no</div></td>
+                            <td class="e13"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="13-V">no</div></td>
+                            <td class="e13"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="13-M">no</div></td>
+                            <td class="e12"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="12-D">no</div></td>
+                            <td class="e12"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="12-V">no</div></td>
+                            <td class="e12"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="12-M">no</div></td>
+                            <td class="e11"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="11-D">no</div></td>
+                            <td class="e11"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="11-V">no</div></td>
+                            <td class="e11"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="11-M">no</div></td>
+                            <td class="e21"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="21-M">no</div></td>
+                            <td class="e21"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="21-V">no</div></td>
+                            <td class="e21"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="21-D">no</div></td>
+                            <td class="e22"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="22-M">no</div></td>
+                            <td class="e22"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="22-V">no</div></td>
+                            <td class="e22"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="22-D">no</div></td>
+                            <td class="e23"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="23-M">no</div></td>
+                            <td class="e23"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="23-V">no</div></td>
+                            <td class="e23"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="23-D">no</div></td>
+                            <td class="e24"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="24-M">no</div></td>
+                            <td class="e24"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="24-V">no</div></td>
+                            <td class="e24"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="24-D">no</div></td>
+                            <td class="e25"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="25-M">no</div></td>
+                            <td class="e25"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="25-V">no</div></td>
+                            <td class="e25"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="25-D">no</div></td>
+                            <td class="e26"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="26-M">no</div></td>
+                            <td class="e26"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="26-V">no</div></td>
+                            <td class="e26"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="26-D">no</div></td>
+                            <td class="e27"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="27-M">no</div></td>
+                            <td class="e27"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="27-V">no</div></td>
+                            <td class="e27"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="27-D">no</div></td>
+                            <td class="e28"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="28-M">no</div></td>
+                            <td class="e28"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="28-V">no</div></td>
+                            <td class="e28"><div class="btn btn-info action" data-type="sanguinamento" data-value="1" data-element="28-D">no</div></td>
+
+                              <!-- gli input del sanguinamento, come del pus e della placca devono restare qui per rispettare l'ordine di inserimento dell'array: possono essere spostati i pulsanti che vanno a cambiare il valore di inserimento -->
+
+                        </tr>
+
+                        <tr class="tasca P">
+                            <td class="index">tasca P</td>
+                            <td class="e18 d"><input type="number" name="exam[e18][]" value="3" /></td>
+                            <td class="e18 v"><input type="number" name="exam[e18][]" value="3" /></td>
+                            <td class="e18 m"><input type="number" name="exam[e18][]" value="3" /></td>
+                            <td class="e17 d"><input type="number" name="exam[e17][]" value="3" /></td>
+                            <td class="e17 v"><input type="number" name="exam[e17][]" value="3" /></td>
+                            <td class="e17 m"><input type="number" name="exam[e17][]" value="3" /></td>
+                            <td class="e16 d"><input type="number" name="exam[e16][]" value="3" /></td>
+                            <td class="e16 v"><input type="number" name="exam[e16][]" value="3" /></td>
+                            <td class="e16 m"><input type="number" name="exam[e16][]" value="3" /></td>
+                            <td class="e15 d"><input type="number" name="exam[e15][]" value="3" /></td>
+                            <td class="e15 v"><input type="number" name="exam[e15][]" value="3" /></td>
+                            <td class="e15 m"><input type="number" name="exam[e15][]" value="3" /></td>
+                            <td class="e14 d"><input type="number" name="exam[e14][]" value="3" /></td>
+                            <td class="e14 v"><input type="number" name="exam[e14][]" value="3" /></td>
+                            <td class="e14 m"><input type="number" name="exam[e14][]" value="3" /></td>
+                            <td class="e13 d"><input type="number" name="exam[e13][]" value="3" /></td>
+                            <td class="e13 v"><input type="number" name="exam[e13][]" value="3" /></td>
+                            <td class="e13 m"><input type="number" name="exam[e13][]" value="3" /></td>
+                            <td class="e12 d"><input type="number" name="exam[e12][]" value="3" /></td>
+                            <td class="e12 v"><input type="number" name="exam[e12][]" value="3" /></td>
+                            <td class="e12 m"><input type="number" name="exam[e12][]" value="3" /></td>
+                            <td class="e11 d"><input type="number" name="exam[e11][]" value="3" /></td>
+                            <td class="e11 v"><input type="number" name="exam[e11][]" value="3" /></td>
+                            <td class="e11 m"><input type="number" name="exam[e11][]" value="3" /></td>
+                            <td class="e21 m"><input type="number" name="exam[e21][]" value="3" /></td>
+                            <td class="e21 v"><input type="number" name="exam[e21][]" value="3" /></td>
+                            <td class="e21 d"><input type="number" name="exam[e21][]" value="3" /></td>
+                            <td class="e22 m"><input type="number" name="exam[e22][]" value="3" /></td>
+                            <td class="e22 v"><input type="number" name="exam[e22][]" value="3" /></td>
+                            <td class="e22 d"><input type="number" name="exam[e22][]" value="3" /></td>
+                            <td class="e23 m"><input type="number" name="exam[e23][]" value="3" /></td>
+                            <td class="e23 v"><input type="number" name="exam[e23][]" value="3" /></td>
+                            <td class="e23 d"><input type="number" name="exam[e23][]" value="3" /></td>
+                            <td class="e24 m"><input type="number" name="exam[e24][]" value="3" /></td>
+                            <td class="e24 v"><input type="number" name="exam[e24][]" value="3" /></td>
+                            <td class="e24 d"><input type="number" name="exam[e24][]" value="3" /></td>
+                            <td class="e25 m"><input type="number" name="exam[e25][]" value="3" /></td>
+                            <td class="e25 v"><input type="number" name="exam[e25][]" value="3" /></td>
+                            <td class="e25 d"><input type="number" name="exam[e25][]" value="3" /></td>
+                            <td class="e26 m"><input type="number" name="exam[e26][]" value="3" /></td>
+                            <td class="e26 v"><input type="number" name="exam[e26][]" value="3" /></td>
+                            <td class="e26 d"><input type="number" name="exam[e26][]" value="3" /></td>
+                            <td class="e27 m"><input type="number" name="exam[e27][]" value="3" /></td>
+                            <td class="e27 v"><input type="number" name="exam[e27][]" value="3" /></td>
+                            <td class="e27 d"><input type="number" name="exam[e27][]" value="3" /></td>
+                            <td class="e28 m"><input type="number" name="exam[e28][]" value="3" /></td>
+                            <td class="e28 v"><input type="number" name="exam[e28][]" value="3" /></td>
+                            <td class="e28 d"><input type="number" name="exam[e28][]" value="3" /></td>
+                        </tr>
+
+                        <tr class="recessione V">
+                            <td class="index">recessione V</td>
+                            <td class="e18 d"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e18 v"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e18 m"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e17 d"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e17 v"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e17 m"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e16 d"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e16 v"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e16 m"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e15 d"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e15 v"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e15 m"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e14 d"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e14 v"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e14 m"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e13 d"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e13 v"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e13 m"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e12 d"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e12 v"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e12 m"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e11 d"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e11 v"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e11 m"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e21 m"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e21 v"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e21 d"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e22 m"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e22 v"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e22 d"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e23 m"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e23 v"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e23 d"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e24 m"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e24 v"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e24 d"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e25 m"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e25 v"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e25 d"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e26 m"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e26 v"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e26 d"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e27 m"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e27 v"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e27 d"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e28 m"><input type="number" name="exam[e28][]" value="0" /></td>
+                            <td class="e28 v"><input type="number" name="exam[e28][]" value="0" /></td>
+                            <td class="e28 d"><input type="number" name="exam[e28][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="recessione P">
+                            <td class="index">recessione P</td>
+                            <td class="e18 d"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e18 v"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e18 m"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e17 d"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e17 v"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e17 m"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e16 d"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e16 v"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e16 m"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e15 d"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e15 v"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e15 m"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e14 d"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e14 v"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e14 m"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e13 d"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e13 v"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e13 m"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e12 d"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e12 v"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e12 m"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e11 d"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e11 v"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e11 m"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e21 m"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e21 v"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e21 d"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e22 m"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e22 v"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e22 d"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e23 m"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e23 v"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e23 d"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e24 m"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e24 v"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e24 d"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e25 m"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e25 v"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e25 d"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e26 m"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e26 v"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e26 d"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e27 m"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e27 v"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e27 d"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e28 m"><input type="number" name="exam[e28][]" value="0" /></td>
+                            <td class="e28 v"><input type="number" name="exam[e28][]" value="0" /></td>
+                            <td class="e28 d"><input type="number" name="exam[e28][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="PA V">
+                            <td class="index">Perdita d'attacco V</td>
+                            <td class="e18 d"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e18 v"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e18 m"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e17 d"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e17 v"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e17 m"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e16 d"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e16 v"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e16 m"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e15 d"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e15 v"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e15 m"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e14 d"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e14 v"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e14 m"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e13 d"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e13 v"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e13 m"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e12 d"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e12 v"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e12 m"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e11 d"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e11 v"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e11 m"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e21 m"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e21 v"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e21 d"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e22 m"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e22 v"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e22 d"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e23 m"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e23 v"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e23 d"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e24 m"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e24 v"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e24 d"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e25 m"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e25 v"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e25 d"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e26 m"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e26 v"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e26 d"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e27 m"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e27 v"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e27 d"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e28 m"><input type="number" name="exam[e28][]" value="0" /></td>
+                            <td class="e28 v"><input type="number" name="exam[e28][]" value="0" /></td>
+                            <td class="e28 d"><input type="number" name="exam[e28][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="PA P">
+                            <td class="index">Perdita d'attacco P</td>
+                            <td class="e18 d"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e18 v"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e18 m"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td class="e17 d"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e17 v"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e17 m"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td class="e16 d"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e16 v"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e16 m"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td class="e15 d"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e15 v"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e15 m"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td class="e14 d"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e14 v"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e14 m"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td class="e13 d"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e13 v"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e13 m"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td class="e12 d"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e12 v"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e12 m"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td class="e11 d"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e11 v"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e11 m"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td class="e21 m"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e21 v"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e21 d"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td class="e22 m"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e22 v"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e22 d"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td class="e23 m"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e23 v"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e23 d"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td class="e24 m"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e24 v"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e24 d"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td class="e25 m"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e25 v"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e25 d"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td class="e26 m"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e26 v"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e26 d"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td class="e27 m"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e27 v"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e27 d"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td class="e28 m"><input type="number" name="exam[e28][]" value="0" /></td>
+                            <td class="e28 v"><input type="number" name="exam[e28][]" value="0" /></td>
+                            <td class="e28 d"><input type="number" name="exam[e28][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="forca M">
+                            <td class="index">forca M</td>
+                            <td colspan="3" class="e18"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td colspan="3" class="e17"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td colspan="3" class="e16"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td colspan="3" class="e15"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td colspan="3" class="e14"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td colspan="18"></td>
+                            <td colspan="3" class="e24"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td colspan="3" class="e25"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td colspan="3" class="e26"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td colspan="3" class="e27"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td colspan="3" class="e28"><input type="number" name="exam[e28][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="forca D">
+                            <td class="index">forca D</td>
+                            <td colspan="3" class="e18"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td colspan="3" class="e17"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td colspan="3" class="e16"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td colspan="3" class="e15"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td colspan="3" class="e14"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td colspan="18"></td>
+                            <td colspan="3" class="e24"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td colspan="3" class="e25"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td colspan="3" class="e26"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td colspan="3" class="e27"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td colspan="3" class="e28"><input type="number" name="exam[e28][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="forca V">
+                            <td class="index">forca V</td>
+                            <td colspan="3" class="e18"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td colspan="3" class="e17"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td colspan="3" class="e16"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td colspan="30"></td>
+                            <td colspan="3" class="e26"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td colspan="3" class="e27"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td colspan="3" class="e28"><input type="number" name="exam[e28][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="mobilita">
+                            <td class="index">mobilità</td>
+                            <td colspan="3" class="e18"><input type="number" name="exam[e18][]" value="0" /></td>
+                            <td colspan="3" class="e17"><input type="number" name="exam[e17][]" value="0" /></td>
+                            <td colspan="3" class="e16"><input type="number" name="exam[e16][]" value="0" /></td>
+                            <td colspan="3" class="e15"><input type="number" name="exam[e15][]" value="0" /></td>
+                            <td colspan="3" class="e14"><input type="number" name="exam[e14][]" value="0" /></td>
+                            <td colspan="3" class="e13"><input type="number" name="exam[e13][]" value="0" /></td>
+                            <td colspan="3" class="e12"><input type="number" name="exam[e12][]" value="0" /></td>
+                            <td colspan="3" class="e11"><input type="number" name="exam[e11][]" value="0" /></td>
+                            <td colspan="3" class="e21"><input type="number" name="exam[e21][]" value="0" /></td>
+                            <td colspan="3" class="e22"><input type="number" name="exam[e22][]" value="0" /></td>
+                            <td colspan="3" class="e23"><input type="number" name="exam[e23][]" value="0" /></td>
+                            <td colspan="3" class="e24"><input type="number" name="exam[e24][]" value="0" /></td>
+                            <td colspan="3" class="e25"><input type="number" name="exam[e25][]" value="0" /></td>
+                            <td colspan="3" class="e26"><input type="number" name="exam[e26][]" value="0" /></td>
+                            <td colspan="3" class="e27"><input type="number" name="exam[e27][]" value="0" /></td>
+                            <td colspan="3" class="e28"><input type="number" name="exam[e28][]" value="0" /></td>
+                        </tr>
+
+
+
+                        <tr class="sang">
+                          <input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" id="sanguinamento-18-D"/>
+                          <input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" id="sanguinamento-18-V"/>
+                          <input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" id="sanguinamento-18-M"/>
+                          <input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" id="sanguinamento-17-D"/>
+                          <input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" id="sanguinamento-17-V"/>
+                          <input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" id="sanguinamento-17-M"/>
+                          <input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" id="sanguinamento-16-D"/>
+                          <input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" id="sanguinamento-16-V"/>
+                          <input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" id="sanguinamento-16-M"/>
+                          <input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" id="sanguinamento-15-D"/>
+                          <input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" id="sanguinamento-15-V"/>
+                          <input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" id="sanguinamento-15-M"/>
+                          <input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" id="sanguinamento-14-D"/>
+                          <input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" id="sanguinamento-14-V"/>
+                          <input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" id="sanguinamento-14-M"/>
+                          <input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" id="sanguinamento-13-D"/>
+                          <input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" id="sanguinamento-13-V"/>
+                          <input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" id="sanguinamento-13-M"/>
+                          <input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" id="sanguinamento-12-D"/>
+                          <input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" id="sanguinamento-12-V"/>
+                          <input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" id="sanguinamento-12-M"/>
+                          <input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" id="sanguinamento-11-D"/>
+                          <input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" id="sanguinamento-11-V"/>
+                          <input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" id="sanguinamento-11-M"/>
+                          <input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" id="sanguinamento-21-D"/>
+                          <input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" id="sanguinamento-21-V"/>
+                          <input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" id="sanguinamento-21-M"/>
+                          <input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e22" value="0" id="sanguinamento-22-D"/>
+                          <input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" id="sanguinamento-22-V"/>
+                          <input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" id="sanguinamento-22-M"/>
+                          <input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" id="sanguinamento-23-M"/>
+                          <input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" id="sanguinamento-23-M"/>
+                          <input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" id="sanguinamento-23-M"/>
+                          <input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" id="sanguinamento-24-D"/>
+                          <input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" id="sanguinamento-24-V"/>
+                          <input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" id="sanguinamento-24-M"/>
+                          <input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" id="sanguinamento-25-D"/>
+                          <input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" id="sanguinamento-25-V"/>
+                          <input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" id="sanguinamento-25-M"/>
+                          <input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" id="sanguinamento-26-D"/>
+                          <input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" id="sanguinamento-26-V"/>
+                          <input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" id="sanguinamento-26-M"/>
+                          <input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" id="sanguinamento-27-D"/>
+                          <input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" id="sanguinamento-27-V"/>
+                          <input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" id="sanguinamento-27-M"/>
+                          <input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" id="sanguinamento-28-D"/>
+                          <input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" id="sanguinamento-28-V"/>
+                          <input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" id="sanguinamento-28-M"/>
+
+                            <td class="index">Sanguinamento P</td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e22" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                        </tr>
+
+                        <tr class="placca">
+                            <td class="index">Placca V</td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e22" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                        </tr>
+
+                        <tr class="placca">
+                            <td class="index">Placca P</td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e22" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                        </tr>
+                        <tr class="pus">
+                            <td class="index">Pus V</td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e22" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                        </tr>
+                        <tr class="pus">
+                            <td class="index">Pus P</td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e18"><input type="number" name="exam[e18][]" class="sanguinamento" data-element=".e18" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e17"><input type="number" name="exam[e17][]" class="sanguinamento" data-element=".e17" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e16"><input type="number" name="exam[e16][]" class="sanguinamento" data-element=".e16" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e15"><input type="number" name="exam[e15][]" class="sanguinamento" data-element=".e15" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e14"><input type="number" name="exam[e14][]" class="sanguinamento" data-element=".e14" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e13"><input type="number" name="exam[e13][]" class="sanguinamento" data-element=".e13" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e12"><input type="number" name="exam[e12][]" class="sanguinamento" data-element=".e12" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e11"><input type="number" name="exam[e11][]" class="sanguinamento" data-element=".e11" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e21"><input type="number" name="exam[e21][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e22" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e22"><input type="number" name="exam[e22][]" class="sanguinamento" data-element=".e21" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e23"><input type="number" name="exam[e23][]" class="sanguinamento" data-element=".e23" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e24"><input type="number" name="exam[e24][]" class="sanguinamento" data-element=".e24" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e25"><input type="number" name="exam[e25][]" class="sanguinamento" data-element=".e25" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e26"><input type="number" name="exam[e26][]" class="sanguinamento" data-element=".e26" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e27"><input type="number" name="exam[e27][]" class="sanguinamento" data-element=".e27" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                            <td class="e28"><input type="number" name="exam[e28][]" class="sanguinamento" data-element=".e28" value="0" /></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+                    <input type="number" name="exam[e18][]" class="favourite" data-element=".e18" value="0" id="favourite-18"/>
+                    <input type="number" name="exam[e17][]" class="favourite" data-element=".e17" value="0" id="favourite-17"/>
+                    <input type="number" name="exam[e16][]" class="favourite" data-element=".e16" value="0" id="favourite-16"/>
+                    <input type="number" name="exam[e15][]" class="favourite" data-element=".e15" value="0" id="favourite-15"/>
+                    <input type="number" name="exam[e14][]" class="favourite" data-element=".e14" value="0" id="favourite-14"/>
+                    <input type="number" name="exam[e13][]" class="favourite" data-element=".e13" value="0" id="favourite-13"/>
+                    <input type="number" name="exam[e12][]" class="favourite" data-element=".e12" value="0" id="favourite-12"/>
+                    <input type="number" name="exam[e11][]" class="favourite" data-element=".e11" value="0" id="favourite-11"/>
+                    <input type="number" name="exam[e21][]" class="favourite" data-element=".e21" value="0" id="favourite-21"/>
+                    <input type="number" name="exam[e22][]" class="favourite" data-element=".e22" value="0" id="favourite-22"/>
+                    <input type="number" name="exam[e23][]" class="favourite" data-element=".e23" value="0" id="favourite-23"/>
+                    <input type="number" name="exam[e24][]" class="favourite" data-element=".e24" value="0" id="favourite-24"/>
+                    <input type="number" name="exam[e25][]" class="favourite" data-element=".e25" value="0" id="favourite-25"/>
+                    <input type="number" name="exam[e26][]" class="favourite" data-element=".e26" value="0" id="favourite-26"/>
+                    <input type="number" name="exam[e27][]" class="favourite" data-element=".e27" value="0" id="favourite-27"/>
+                    <input type="number" name="exam[e28][]" class="favourite" data-element=".e28" value="0" id="favourite-28"/>
+
+
+
+                                <!--  ARCATA INFERIORE -->
+
+
+
+
+
+
+                    <h2 class="text-center">Arcata inferiore</h2>
+                    <table class="exam">
+                      <thead>
+                        <tr class="indice">
+                            <td colspan="1" rowspan="3" class="indice">indice</td>
+                            <td colspan="3" class="e48" data-site=".e48">48</td>
+                            <td colspan="3" class="e47" data-site=".e47">47</td>
+                            <td colspan="3" class="e46" data-site=".e46">46</td>
+                            <td colspan="3" class="e45" data-site=".e45">45</td>
+                            <td colspan="3" class="e44" data-site=".e44">44</td>
+                            <td colspan="3" class="e43" data-site=".e43">43</td>
+                            <td colspan="3" class="e42" data-site=".e42">42</td>
+                            <td colspan="3" class="e41" data-site=".e41">41</td>
+                            <td colspan="3" class="e31" data-site=".e31">31</td>
+                            <td colspan="3" class="e32" data-site=".e32">32</td>
+                            <td colspan="3" class="e33" data-site=".e33">33</td>
+                            <td colspan="3" class="e34" data-site=".e34">34</td>
+                            <td colspan="3" class="e35" data-site=".e35">35</td>
+                            <td colspan="3" class="e36" data-site=".e36">36</td>
+                            <td colspan="3" class="e37" data-site=".e37">37</td>
+                            <td colspan="3" class="e38" data-site=".e38">38</td>
+                        </tr>
+                        <tr>
+                            <td class="e48">D</td>
+                            <td class="e48">V</td>
+                            <td class="e48">M</td>
+
+                            <td class="e47">D</td>
+                            <td class="e47">V</td>
+                            <td class="e47">M</td>
+
+                            <td class="e46">D</td>
+                            <td class="e46">V</td>
+                            <td class="e46">M</td>
+
+                            <td class="e45">D</td>
+                            <td class="e45">V</td>
+                            <td class="e45">M</td>
+
+                            <td class="e44">D</td>
+                            <td class="e44">V</td>
+                            <td class="e44">M</td>
+
+                            <td class="e43">D</td>
+                            <td class="e43">V</td>
+                            <td class="e43">M</td>
+
+                            <td class="e42">D</td>
+                            <td class="e42">V</td>
+                            <td class="e42">M</td>
+
+                            <td class="e41">D</td>
+                            <td class="e41">V</td>
+                            <td class="e41">M</td>
+
+                            <td class="e31">M</td>
+                            <td class="e31">V</td>
+                            <td class="e31">D</td>
+
+                            <td class="e32">M</td>
+                            <td class="e32">V</td>
+                            <td class="e32">D</td>
+
+                            <td class="e33">M</td>
+                            <td class="e33">V</td>
+                            <td class="e33">D</td>
+
+                            <td class="e34">M</td>
+                            <td class="e34">V</td>
+                            <td class="e34">D</td>
+
+                            <td class="e35">M</td>
+                            <td class="e35">V</td>
+                            <td class="e35">D</td>
+
+                            <td class="e36">M</td>
+                            <td class="e36">V</td>
+                            <td class="e36">D</td>
+
+                            <td class="e37">M</td>
+                            <td class="e37">V</td>
+                            <td class="e37">D</td>
+
+                            <td class="e38">M</td>
+                            <td class="e38">V</td>
+                            <td class="e38">D</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="assenza">
+                            <td class="index">elemento assente</td>
+                            <td colspan="3" class="e48"><input type="number" name="exam[e48][]" class="assenza" data-element=".e48" value="0"/></td>
+                            <td colspan="3" class="e47"><input type="number" name="exam[e47][]" class="assenza" data-element=".e47" value="0"/></td>
+                            <td colspan="3" class="e46"><input type="number" name="exam[e46][]" class="assenza" data-element=".e46" value="0"/></td>
+                            <td colspan="3" class="e45"><input type="number" name="exam[e45][]" class="assenza" data-element=".e45" value="0"/></td>
+                            <td colspan="3" class="e44"><input type="number" name="exam[e44][]" class="assenza" data-element=".e44" value="0"/></td>
+                            <td colspan="3" class="e43"><input type="number" name="exam[e43][]" class="assenza" data-element=".e43" value="0"/></td>
+                            <td colspan="3" class="e42"><input type="number" name="exam[e42][]" class="assenza" data-element=".e42" value="0"/></td>
+                            <td colspan="3" class="e41"><input type="number" name="exam[e41][]" class="assenza" data-element=".e41" value="0"/></td>
+                            <td colspan="3" class="e31"><input type="number" name="exam[e31][]" class="assenza" data-element=".e31" value="0"/></td>
+                            <td colspan="3" class="e32"><input type="number" name="exam[e32][]" class="assenza" data-element=".e32" value="0"/></td>
+                            <td colspan="3" class="e33"><input type="number" name="exam[e33][]" class="assenza" data-element=".e33" value="0"/></td>
+                            <td colspan="3" class="e34"><input type="number" name="exam[e34][]" class="assenza" data-element=".e34" value="0"/></td>
+                            <td colspan="3" class="e35"><input type="number" name="exam[e35][]" class="assenza" data-element=".e35" value="0"/></td>
+                            <td colspan="3" class="e36"><input type="number" name="exam[e36][]" class="assenza" data-element=".e36" value="0"/></td>
+                            <td colspan="3" class="e37"><input type="number" name="exam[e37][]" class="assenza" data-element=".e37" value="0"/></td>
+                            <td colspan="3" class="e38"><input type="number" name="exam[e38][]" class="assenza" data-element=".e38" value="0"/></td>
+                        </tr>
+
+                        <tr class="impianto">
+                            <td class="index">impianto</td>
+                            <td colspan="3" class="e48"><input type="number" name="exam[e48][]" class="assenza" data-element=".e48" value="0"/></td>
+                            <td colspan="3" class="e47"><input type="number" name="exam[e47][]" class="assenza" data-element=".e47" value="0"/></td>
+                            <td colspan="3" class="e46"><input type="number" name="exam[e46][]" class="assenza" data-element=".e46" value="0"/></td>
+                            <td colspan="3" class="e45"><input type="number" name="exam[e45][]" class="assenza" data-element=".e45" value="0"/></td>
+                            <td colspan="3" class="e44"><input type="number" name="exam[e44][]" class="assenza" data-element=".e44" value="0"/></td>
+                            <td colspan="3" class="e43"><input type="number" name="exam[e43][]" class="assenza" data-element=".e43" value="0"/></td>
+                            <td colspan="3" class="e42"><input type="number" name="exam[e42][]" class="assenza" data-element=".e42" value="0"/></td>
+                            <td colspan="3" class="e41"><input type="number" name="exam[e41][]" class="assenza" data-element=".e41" value="0"/></td>
+                            <td colspan="3" class="e31"><input type="number" name="exam[e31][]" class="assenza" data-element=".e31" value="0"/></td>
+                            <td colspan="3" class="e32"><input type="number" name="exam[e32][]" class="assenza" data-element=".e32" value="0"/></td>
+                            <td colspan="3" class="e33"><input type="number" name="exam[e33][]" class="assenza" data-element=".e33" value="0"/></td>
+                            <td colspan="3" class="e34"><input type="number" name="exam[e34][]" class="assenza" data-element=".e34" value="0"/></td>
+                            <td colspan="3" class="e35"><input type="number" name="exam[e35][]" class="assenza" data-element=".e35" value="0"/></td>
+                            <td colspan="3" class="e36"><input type="number" name="exam[e36][]" class="assenza" data-element=".e36" value="0"/></td>
+                            <td colspan="3" class="e37"><input type="number" name="exam[e37][]" class="assenza" data-element=".e37" value="0"/></td>
+                            <td colspan="3" class="e38"><input type="number" name="exam[e38][]" class="assenza" data-element=".e38" value="0"/></td>
+                        </tr>
+                        <tr class="tasca V">
+                            <td class="index">tasca V</td>
+                            <td class="e48 d"><input type="number" name="exam[e48][]" value="3" /></td>
+                            <td class="e48 v"><input type="number" name="exam[e48][]" value="3" /></td>
+                            <td class="e48 m"><input type="number" name="exam[e48][]" value="3" /></td>
+                            <td class="e47 d"><input type="number" name="exam[e47][]" value="3" /></td>
+                            <td class="e47 v"><input type="number" name="exam[e47][]" value="3" /></td>
+                            <td class="e47 m"><input type="number" name="exam[e47][]" value="3" /></td>
+                            <td class="e46 d"><input type="number" name="exam[e46][]" value="3" /></td>
+                            <td class="e46 v"><input type="number" name="exam[e46][]" value="3" /></td>
+                            <td class="e46 m"><input type="number" name="exam[e46][]" value="3" /></td>
+                            <td class="e45 d"><input type="number" name="exam[e45][]" value="3" /></td>
+                            <td class="e45 v"><input type="number" name="exam[e45][]" value="3" /></td>
+                            <td class="e45 m"><input type="number" name="exam[e45][]" value="3" /></td>
+                            <td class="e44 d"><input type="number" name="exam[e44][]" value="3" /></td>
+                            <td class="e44 v"><input type="number" name="exam[e44][]" value="3" /></td>
+                            <td class="e44 m"><input type="number" name="exam[e44][]" value="3" /></td>
+                            <td class="e43 d"><input type="number" name="exam[e43][]" value="3" /></td>
+                            <td class="e43 v"><input type="number" name="exam[e43][]" value="3" /></td>
+                            <td class="e43 m"><input type="number" name="exam[e43][]" value="3" /></td>
+                            <td class="e42 d"><input type="number" name="exam[e42][]" value="3" /></td>
+                            <td class="e42 v"><input type="number" name="exam[e42][]" value="3" /></td>
+                            <td class="e42 m"><input type="number" name="exam[e42][]" value="3" /></td>
+                            <td class="e41 d"><input type="number" name="exam[e41][]" value="3" /></td>
+                            <td class="e41 v"><input type="number" name="exam[e41][]" value="3" /></td>
+                            <td class="e41 m"><input type="number" name="exam[e41][]" value="3" /></td>
+                            <td class="e31 m"><input type="number" name="exam[e31][]" value="3" /></td>
+                            <td class="e31 v"><input type="number" name="exam[e31][]" value="3" /></td>
+                            <td class="e31 d"><input type="number" name="exam[e31][]" value="3" /></td>
+                            <td class="e32 m"><input type="number" name="exam[e32][]" value="3" /></td>
+                            <td class="e32 v"><input type="number" name="exam[e32][]" value="3" /></td>
+                            <td class="e32 d"><input type="number" name="exam[e32][]" value="3" /></td>
+                            <td class="e33 m"><input type="number" name="exam[e33][]" value="3" /></td>
+                            <td class="e33 v"><input type="number" name="exam[e33][]" value="3" /></td>
+                            <td class="e33 d"><input type="number" name="exam[e33][]" value="3" /></td>
+                            <td class="e34 m"><input type="number" name="exam[e34][]" value="3" /></td>
+                            <td class="e34 v"><input type="number" name="exam[e34][]" value="3" /></td>
+                            <td class="e34 d"><input type="number" name="exam[e34][]" value="3" /></td>
+                            <td class="e35 m"><input type="number" name="exam[e35][]" value="3" /></td>
+                            <td class="e35 v"><input type="number" name="exam[e35][]" value="3" /></td>
+                            <td class="e35 d"><input type="number" name="exam[e35][]" value="3" /></td>
+                            <td class="e36 m"><input type="number" name="exam[e36][]" value="3" /></td>
+                            <td class="e36 v"><input type="number" name="exam[e36][]" value="3" /></td>
+                            <td class="e36 d"><input type="number" name="exam[e36][]" value="3" /></td>
+                            <td class="e37 m"><input type="number" name="exam[e37][]" value="3" /></td>
+                            <td class="e37 v"><input type="number" name="exam[e37][]" value="3" /></td>
+                            <td class="e37 d"><input type="number" name="exam[e37][]" value="3" /></td>
+                            <td class="e38 m"><input type="number" name="exam[e38][]" value="3" /></td>
+                            <td class="e38 v"><input type="number" name="exam[e38][]" value="3" /></td>
+                            <td class="e38 d"><input type="number" name="exam[e38][]" value="3" /></td>
+                        </tr>
+
+                        <tr class="tasca P">
+                            <td class="index">tasca P</td>
+                            <td class="e48 d"><input type="number" name="exam[e48][]" value="3" /></td>
+                            <td class="e48 v"><input type="number" name="exam[e48][]" value="3" /></td>
+                            <td class="e48 m"><input type="number" name="exam[e48][]" value="3" /></td>
+                            <td class="e47 d"><input type="number" name="exam[e47][]" value="3" /></td>
+                            <td class="e47 v"><input type="number" name="exam[e47][]" value="3" /></td>
+                            <td class="e47 m"><input type="number" name="exam[e47][]" value="3" /></td>
+                            <td class="e46 d"><input type="number" name="exam[e46][]" value="3" /></td>
+                            <td class="e46 v"><input type="number" name="exam[e46][]" value="3" /></td>
+                            <td class="e46 m"><input type="number" name="exam[e46][]" value="3" /></td>
+                            <td class="e45 d"><input type="number" name="exam[e45][]" value="3" /></td>
+                            <td class="e45 v"><input type="number" name="exam[e45][]" value="3" /></td>
+                            <td class="e45 m"><input type="number" name="exam[e45][]" value="3" /></td>
+                            <td class="e44 d"><input type="number" name="exam[e44][]" value="3" /></td>
+                            <td class="e44 v"><input type="number" name="exam[e44][]" value="3" /></td>
+                            <td class="e44 m"><input type="number" name="exam[e44][]" value="3" /></td>
+                            <td class="e43 d"><input type="number" name="exam[e43][]" value="3" /></td>
+                            <td class="e43 v"><input type="number" name="exam[e43][]" value="3" /></td>
+                            <td class="e43 m"><input type="number" name="exam[e43][]" value="3" /></td>
+                            <td class="e42 d"><input type="number" name="exam[e42][]" value="3" /></td>
+                            <td class="e42 v"><input type="number" name="exam[e42][]" value="3" /></td>
+                            <td class="e42 m"><input type="number" name="exam[e42][]" value="3" /></td>
+                            <td class="e41 d"><input type="number" name="exam[e41][]" value="3" /></td>
+                            <td class="e41 v"><input type="number" name="exam[e41][]" value="3" /></td>
+                            <td class="e41 m"><input type="number" name="exam[e41][]" value="3" /></td>
+                            <td class="e31 m"><input type="number" name="exam[e31][]" value="3" /></td>
+                            <td class="e31 v"><input type="number" name="exam[e31][]" value="3" /></td>
+                            <td class="e31 d"><input type="number" name="exam[e31][]" value="3" /></td>
+                            <td class="e32 m"><input type="number" name="exam[e32][]" value="3" /></td>
+                            <td class="e32 v"><input type="number" name="exam[e32][]" value="3" /></td>
+                            <td class="e32 d"><input type="number" name="exam[e32][]" value="3" /></td>
+                            <td class="e33 m"><input type="number" name="exam[e33][]" value="3" /></td>
+                            <td class="e33 v"><input type="number" name="exam[e33][]" value="3" /></td>
+                            <td class="e33 d"><input type="number" name="exam[e33][]" value="3" /></td>
+                            <td class="e34 m"><input type="number" name="exam[e34][]" value="3" /></td>
+                            <td class="e34 v"><input type="number" name="exam[e34][]" value="3" /></td>
+                            <td class="e34 d"><input type="number" name="exam[e34][]" value="3" /></td>
+                            <td class="e35 m"><input type="number" name="exam[e35][]" value="3" /></td>
+                            <td class="e35 v"><input type="number" name="exam[e35][]" value="3" /></td>
+                            <td class="e35 d"><input type="number" name="exam[e35][]" value="3" /></td>
+                            <td class="e36 m"><input type="number" name="exam[e36][]" value="3" /></td>
+                            <td class="e36 v"><input type="number" name="exam[e36][]" value="3" /></td>
+                            <td class="e36 d"><input type="number" name="exam[e36][]" value="3" /></td>
+                            <td class="e37 m"><input type="number" name="exam[e37][]" value="3" /></td>
+                            <td class="e37 v"><input type="number" name="exam[e37][]" value="3" /></td>
+                            <td class="e37 d"><input type="number" name="exam[e37][]" value="3" /></td>
+                            <td class="e38 m"><input type="number" name="exam[e38][]" value="3" /></td>
+                            <td class="e38 v"><input type="number" name="exam[e38][]" value="3" /></td>
+                            <td class="e38 d"><input type="number" name="exam[e38][]" value="3" /></td>
+                        </tr>
+
+                        <tr class="recessione V">
+                            <td class="index">recessione V</td>
+                            <td class="e48 d"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e48 v"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e48 m"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e47 d"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e47 v"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e47 m"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e46 d"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e46 v"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e46 m"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e45 d"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e45 v"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e45 m"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e44 d"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e44 v"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e44 m"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e43 d"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e43 v"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e43 m"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e42 d"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e42 v"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e42 m"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e41 d"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e41 v"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e41 m"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e31 m"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e31 v"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e31 d"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e32 m"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e32 v"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e32 d"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e33 m"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e33 v"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e33 d"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e34 m"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e34 v"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e34 d"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e35 m"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e35 v"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e35 d"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e36 m"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e36 v"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e36 d"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e37 m"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e37 v"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e37 d"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e38 m"><input type="number" name="exam[e38][]" value="0" /></td>
+                            <td class="e38 v"><input type="number" name="exam[e38][]" value="0" /></td>
+                            <td class="e38 d"><input type="number" name="exam[e38][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="recessione P">
+                            <td class="index">recessione P</td>
+                            <td class="e48 d"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e48 v"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e48 m"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e47 d"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e47 v"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e47 m"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e46 d"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e46 v"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e46 m"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e45 d"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e45 v"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e45 m"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e44 d"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e44 v"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e44 m"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e43 d"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e43 v"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e43 m"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e42 d"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e42 v"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e42 m"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e41 d"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e41 v"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e41 m"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e31 m"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e31 v"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e31 d"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e32 m"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e32 v"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e32 d"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e33 m"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e33 v"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e33 d"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e34 m"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e34 v"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e34 d"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e35 m"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e35 v"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e35 d"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e36 m"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e36 v"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e36 d"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e37 m"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e37 v"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e37 d"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e38 m"><input type="number" name="exam[e38][]" value="0" /></td>
+                            <td class="e38 v"><input type="number" name="exam[e38][]" value="0" /></td>
+                            <td class="e38 d"><input type="number" name="exam[e38][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="PA V">
+                            <td class="index">Perdita d'attacco V</td>
+                            <td class="e48 d"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e48 v"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e48 m"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e47 d"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e47 v"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e47 m"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e46 d"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e46 v"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e46 m"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e45 d"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e45 v"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e45 m"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e44 d"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e44 v"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e44 m"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e43 d"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e43 v"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e43 m"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e42 d"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e42 v"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e42 m"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e41 d"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e41 v"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e41 m"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e31 m"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e31 v"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e31 d"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e32 m"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e32 v"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e32 d"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e33 m"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e33 v"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e33 d"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e34 m"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e34 v"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e34 d"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e35 m"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e35 v"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e35 d"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e36 m"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e36 v"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e36 d"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e37 m"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e37 v"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e37 d"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e38 m"><input type="number" name="exam[e38][]" value="0" /></td>
+                            <td class="e38 v"><input type="number" name="exam[e38][]" value="0" /></td>
+                            <td class="e38 d"><input type="number" name="exam[e38][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="PA P">
+                            <td class="index">Perdita d'attacco P</td>
+                            <td class="e48 d"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e48 v"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e48 m"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td class="e47 d"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e47 v"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e47 m"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td class="e46 d"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e46 v"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e46 m"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td class="e45 d"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e45 v"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e45 m"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td class="e44 d"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e44 v"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e44 m"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td class="e43 d"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e43 v"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e43 m"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td class="e42 d"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e42 v"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e42 m"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td class="e41 d"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e41 v"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e41 m"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td class="e31 m"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e31 v"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e31 d"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td class="e32 m"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e32 v"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e32 d"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td class="e33 m"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e33 v"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e33 d"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td class="e34 m"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e34 v"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e34 d"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td class="e35 m"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e35 v"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e35 d"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td class="e36 m"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e36 v"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e36 d"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td class="e37 m"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e37 v"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e37 d"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td class="e38 m"><input type="number" name="exam[e38][]" value="0" /></td>
+                            <td class="e38 v"><input type="number" name="exam[e38][]" value="0" /></td>
+                            <td class="e38 d"><input type="number" name="exam[e38][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="forca M">
+                            <td class="index">forca M</td>
+                            <td colspan="3" class="e48"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td colspan="3" class="e47"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td colspan="3" class="e46"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td colspan="3" class="e45"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td colspan="3" class="e44"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td colspan="18"></td>
+                            <td colspan="3" class="e34"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td colspan="3" class="e35"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td colspan="3" class="e36"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td colspan="3" class="e37"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td colspan="3" class="e38"><input type="number" name="exam[e38][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="forca D">
+                            <td class="index">forca D</td>
+                            <td colspan="3" class="e48"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td colspan="3" class="e47"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td colspan="3" class="e46"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td colspan="3" class="e45"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td colspan="3" class="e44"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td colspan="18"></td>
+                            <td colspan="3" class="e34"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td colspan="3" class="e35"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td colspan="3" class="e36"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td colspan="3" class="e37"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td colspan="3" class="e38"><input type="number" name="exam[e38][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="forca V">
+                            <td class="index">forca V</td>
+                            <td colspan="3" class="e48"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td colspan="3" class="e47"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td colspan="3" class="e46"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td colspan="30"></td>
+                            <td colspan="3" class="e36"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td colspan="3" class="e37"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td colspan="3" class="e38"><input type="number" name="exam[e38][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="mobilita">
+                            <td class="index">mobilità</td>
+                            <td colspan="3" class="e48"><input type="number" name="exam[e48][]" value="0" /></td>
+                            <td colspan="3" class="e47"><input type="number" name="exam[e47][]" value="0" /></td>
+                            <td colspan="3" class="e46"><input type="number" name="exam[e46][]" value="0" /></td>
+                            <td colspan="3" class="e45"><input type="number" name="exam[e45][]" value="0" /></td>
+                            <td colspan="3" class="e44"><input type="number" name="exam[e44][]" value="0" /></td>
+                            <td colspan="3" class="e43"><input type="number" name="exam[e43][]" value="0" /></td>
+                            <td colspan="3" class="e42"><input type="number" name="exam[e42][]" value="0" /></td>
+                            <td colspan="3" class="e41"><input type="number" name="exam[e41][]" value="0" /></td>
+                            <td colspan="3" class="e31"><input type="number" name="exam[e31][]" value="0" /></td>
+                            <td colspan="3" class="e32"><input type="number" name="exam[e32][]" value="0" /></td>
+                            <td colspan="3" class="e33"><input type="number" name="exam[e33][]" value="0" /></td>
+                            <td colspan="3" class="e34"><input type="number" name="exam[e34][]" value="0" /></td>
+                            <td colspan="3" class="e35"><input type="number" name="exam[e35][]" value="0" /></td>
+                            <td colspan="3" class="e36"><input type="number" name="exam[e36][]" value="0" /></td>
+                            <td colspan="3" class="e37"><input type="number" name="exam[e37][]" value="0" /></td>
+                            <td colspan="3" class="e38"><input type="number" name="exam[e38][]" value="0" /></td>
+                        </tr>
+
+                        <tr class="sang">
+                            <td class="index">Sanguinamento V</td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e32" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                        </tr>
+
+                        <tr class="sang">
+                            <td class="index">Sanguinamento P</td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e32" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                        </tr>
+
+                        <tr class="placca">
+                            <td class="index">Placca V</td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e32" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                        </tr>
+
+                        <tr class="placca">
+                            <td class="index">Placca P</td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e32" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                        </tr>
+                        <tr class="pus">
+                            <td class="index">Pus V</td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e32" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                        </tr>
+                        <tr class="pus">
+                            <td class="index">Pus P</td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e48"><input type="number" name="exam[e48][]" class="sanguinamento" data-element=".e48" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e47"><input type="number" name="exam[e47][]" class="sanguinamento" data-element=".e47" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e46"><input type="number" name="exam[e46][]" class="sanguinamento" data-element=".e46" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e45"><input type="number" name="exam[e45][]" class="sanguinamento" data-element=".e45" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e44"><input type="number" name="exam[e44][]" class="sanguinamento" data-element=".e44" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e43"><input type="number" name="exam[e43][]" class="sanguinamento" data-element=".e43" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e42"><input type="number" name="exam[e42][]" class="sanguinamento" data-element=".e42" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e41"><input type="number" name="exam[e41][]" class="sanguinamento" data-element=".e41" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e31"><input type="number" name="exam[e31][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e32" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e32"><input type="number" name="exam[e32][]" class="sanguinamento" data-element=".e31" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e33"><input type="number" name="exam[e33][]" class="sanguinamento" data-element=".e33" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e34"><input type="number" name="exam[e34][]" class="sanguinamento" data-element=".e34" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e35"><input type="number" name="exam[e35][]" class="sanguinamento" data-element=".e35" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e36"><input type="number" name="exam[e36][]" class="sanguinamento" data-element=".e36" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e37"><input type="number" name="exam[e37][]" class="sanguinamento" data-element=".e37" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                            <td class="e38"><input type="number" name="exam[e38][]" class="sanguinamento" data-element=".e38" value="0" /></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+  <%= submit_tag('Add new exam') %>
+<% end %>
